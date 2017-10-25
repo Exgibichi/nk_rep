@@ -5,7 +5,7 @@ suites:
 - "trusty"
 architectures:
 - "amd64"
-packages: 
+packages:
 - "curl"
 - "g++-multilib"
 - "git-core"
@@ -19,7 +19,7 @@ packages:
 - "ca-certificates"
 reference_datetime: "2016-01-01 00:00:00"
 remotes:
-- "url": "https://github.com/Neko/neko.git"
+- "url": "https://github.com/Exgibichi/neko.git"
   "dir": "neko"
 files: []
 script: |
@@ -108,4 +108,3 @@ script: |
   mv $SOURCEDIST $OUTDIR/src
   mv ${OUTDIR}/${DISTNAME}-x86_64-*.tar.gz ${OUTDIR}/${DISTNAME}-linux64.tar.gz
   mv ${OUTDIR}/${DISTNAME}-i686-*.tar.gz ${OUTDIR}/${DISTNAME}-linux32.tar.gz
-

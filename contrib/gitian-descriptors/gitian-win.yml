@@ -5,7 +5,7 @@ suites:
 - "trusty"
 architectures:
 - "amd64"
-packages: 
+packages:
 - "curl"
 - "g++"
 - "git-core"
@@ -22,7 +22,7 @@ packages:
 - "ca-certificates"
 reference_datetime: "2016-01-01 00:00:00"
 remotes:
-- "url": "https://github.com/Neko/neko.git"
+- "url": "https://github.com/Exgibichi/neko.git"
   "dir": "neko"
 files: []
 script: |
