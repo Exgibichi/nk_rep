@@ -72,11 +72,11 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += emercoind
+  bin_PROGRAMS += nekod
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += emercoin-cli emercoin-tx
+  bin_PROGRAMS += neko-cli neko-tx
 endif
 
 .PHONY: FORCE
@@ -154,12 +154,12 @@ BITCOIN_CORE_H = \
   wallet_ismine.h \
   walletdb.h \
   compat/sanity.h \
-## --- ppcoin and emercoin headers start from this line --- ##
+## --- ppcoin and neko headers start from this line --- ##
   uint256hm.h \
   kernel.h \
   namecoin.h \
   hooks.h \
-  emcdns.h \
+  nkdns.h \
   checkpoints_eb.h \
   ministun.h \
   exch.h
@@ -196,10 +196,10 @@ libbitcoin_server_a_SOURCES = \
   script/sigcache.cpp \
   txdb.cpp \
   txmempool.cpp \
-## --- ppcoin and emercoin sources start from this line --- ##
+## --- ppcoin and neko sources start from this line --- ##
   kernel.cpp \
   namecoin.cpp \
-  emcdns.cpp \
+  nkdns.cpp \
   stun.cpp \
   exch.cpp \
   $(BITCOIN_CORE_H)
@@ -302,15 +302,15 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-emercoind_SOURCES = bitcoind.cpp
-emercoind_CPPFLAGS = $(BITCOIN_INCLUDES)
-emercoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+nekod_SOURCES = bitcoind.cpp
+nekod_CPPFLAGS = $(BITCOIN_INCLUDES)
+nekod_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-emercoind_SOURCES += bitcoind-res.rc
+nekod_SOURCES += bitcoind-res.rc
 endif
 
-emercoind_LDADD = \
+nekod_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -321,22 +321,22 @@ emercoind_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_WALLET
-emercoind_LDADD += libbitcoin_wallet.a
+nekod_LDADD += libbitcoin_wallet.a
 endif
 
-emercoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
+nekod_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
 #
 
 # bitcoin-cli binary #
-emercoin_cli_SOURCES = bitcoin-cli.cpp
-emercoin_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
-emercoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+neko_cli_SOURCES = bitcoin-cli.cpp
+neko_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
+neko_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-emercoin_cli_SOURCES += bitcoin-cli-res.rc
+neko_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
-emercoin_cli_LDADD = \
+neko_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
@@ -346,11 +346,11 @@ emercoin_cli_LDADD = \
 #
 
 # bitcoin-tx binary #
-emercoin_tx_SOURCES = bitcoin-tx.cpp
-emercoin_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
-emercoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+neko_tx_SOURCES = bitcoin-tx.cpp
+neko_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+neko_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
-emercoin_tx_LDADD = \
+neko_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \

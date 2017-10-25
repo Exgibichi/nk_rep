@@ -11,7 +11,7 @@
   </array>
 
   <key>CFBundleIconFile</key>
-  <string>emercoin.icns</string>
+  <string>neko.icns</string>
 
   <key>CFBundlePackageType</key>
   <string>APPL</string>
@@ -29,10 +29,10 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Emercoin-Qt</string>
+  <string>Neko-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>com.emercoin.Emercoin-Qt</string>
+  <string>com.neko.Neko-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -40,10 +40,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>com.emercoin.EmercoinPayment</string>
+      <string>com.neko.NekoPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>emercoin</string>
+        <string>neko</string>
       </array>
     </dict>
   </array>
@@ -52,9 +52,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>com.emercoin.paymentrequest</string>
+      <string>com.neko.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Emercoin payment request</string>
+      <string>Neko payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -62,10 +62,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-emercoin-payment-request</string>
+        <string>application/x-neko-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>emercoinpaymentrequest</string>
+          <string>nekopaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -78,7 +78,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>com.emercoin.paymentrequest</string>
+        <string>com.neko.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

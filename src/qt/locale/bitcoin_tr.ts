@@ -47,11 +47,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Emercoin yollanacak adresi seç</translation>
+        <translation>Neko yollanacak adresi seç</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Emercoin alınacak adresi seç</translation>
+        <translation>Neko alınacak adresi seç</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -66,12 +66,12 @@
         <translation>Alım adresleri</translation>
     </message>
     <message>
-        <source>These are your Emercoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Bunlar ödeme yapmak için kullanacağınız Emercoin adreslerinizdir. Emercoin yollamadan önce meblağı ve alıcı adresini daima kontrol ediniz.</translation>
+        <source>These are your Neko addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Bunlar ödeme yapmak için kullanacağınız Neko adreslerinizdir. Neko yollamadan önce meblağı ve alıcı adresini daima kontrol ediniz.</translation>
     </message>
     <message>
-        <source>These are your Emercoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Bunlar ödeme almak için kullanacağınız Emercoin adreslerinizdir. Her muamele için yeni bir alım adresi kullanmanız tavsiye edilir.</translation>
+        <source>These are your Neko addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Bunlar ödeme almak için kullanacağınız Neko adreslerinizdir. Her muamele için yeni bir alım adresi kullanmanız tavsiye edilir.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -164,7 +164,7 @@
         <translation>Cüzdan şifrelenmesini teyit eder</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR EMERCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NEKOS&lt;/b&gt;!</source>
         <translation>Uyarı: Eğer cüzdanınızı şifrelerseniz ve parolanızı kaybederseniz, &lt;b&gt;TÜM BİTCOİNLERİNİZİ KAYBEDERSİNİZ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -188,8 +188,8 @@
         <translation>Cüzdan için yeni parolayı giriniz.&lt;br/&gt;Lütfen &lt;b&gt;on ya da daha fazla rastgele karakter&lt;/b&gt; veya &lt;b&gt;sekiz ya da daha fazla kelime&lt;/b&gt; içeren bir parola kullanınız.</translation>
     </message>
     <message>
-        <source>Emercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your emercoins from being stolen by malware infecting your computer.</source>
-        <translation>Şifreleme işlemini tamamlamak için Emercoin şimdi kapanacaktır. Cüzdanınızı şifrelemenin, Emercoinlerinizin bilgisayara bulaşan kötücül bir yazılım tarafından çalınmaya karşı tamamen koruyamayacağını unutmayınız.</translation>
+        <source>Neko will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your nekos from being stolen by malware infecting your computer.</source>
+        <translation>Şifreleme işlemini tamamlamak için Neko şimdi kapanacaktır. Cüzdanınızı şifrelemenin, Nekolerinizin bilgisayara bulaşan kötücül bir yazılım tarafından çalınmaya karşı tamamen koruyamayacağını unutmayınız.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -295,8 +295,8 @@
         <translation>&amp;URI aç...</translation>
     </message>
     <message>
-        <source>Emercoin Core client</source>
-        <translation>Emercoin Çekirdeği istemcisi</translation>
+        <source>Neko Core client</source>
+        <translation>Neko Çekirdeği istnkisi</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -307,12 +307,12 @@
         <translation>Diskteki bloklar yeniden endeksleniyor...</translation>
     </message>
     <message>
-        <source>Send coins to an Emercoin address</source>
-        <translation>Bir Emercoin adresine Emercoin yolla</translation>
+        <source>Send coins to an Neko address</source>
+        <translation>Bir Neko adresine Neko yolla</translation>
     </message>
     <message>
-        <source>Modify configuration options for Emercoin</source>
-        <translation>Emercoin seçeneklerinin yapılandırmasını değiştir</translation>
+        <source>Modify configuration options for Neko</source>
+        <translation>Neko seçeneklerinin yapılandırmasını değiştir</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -335,8 +335,8 @@
         <translation>Mesaj &amp;kontrol et...</translation>
     </message>
     <message>
-        <source>Emercoin</source>
-        <translation>Emercoin</translation>
+        <source>Neko</source>
+        <translation>Neko</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -351,8 +351,8 @@
         <translation>&amp;Al</translation>
     </message>
     <message>
-        <source>Show information about Emercoin Core</source>
-        <translation>Emercoin Çekirdeği hakkında bilgi göster</translation>
+        <source>Show information about Neko Core</source>
+        <translation>Neko Çekirdeği hakkında bilgi göster</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -367,12 +367,12 @@
         <translation>Cüzdanınızın özel anahtarlarını şifrele</translation>
     </message>
     <message>
-        <source>Sign messages with your Emercoin addresses to prove you own them</source>
-        <translation>Mesajları adreslerin size ait olduğunu ispatlamak için Emercoin adresleri ile imzala</translation>
+        <source>Sign messages with your Neko addresses to prove you own them</source>
+        <translation>Mesajları adreslerin size ait olduğunu ispatlamak için Neko adresleri ile imzala</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Emercoin addresses</source>
-        <translation>Belirtilen Emercoin adresleri ile imzalandıklarından emin olmak için mesajları kontrol et</translation>
+        <source>Verify messages to ensure they were signed with specified Neko addresses</source>
+        <translation>Belirtilen Neko adresleri ile imzalandıklarından emin olmak için mesajları kontrol et</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -391,16 +391,16 @@
         <translation>Sekme araç çubuğu</translation>
     </message>
     <message>
-        <source>Emercoin Core</source>
-        <translation>Emercoin Çekirdeği</translation>
+        <source>Neko Core</source>
+        <translation>Neko Çekirdeği</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and emercoin: URIs)</source>
-        <translation>Ödeme talep et (QR kodu ve emercoin URI'si oluşturur)</translation>
+        <source>Request payments (generates QR codes and neko: URIs)</source>
+        <translation>Ödeme talep et (QR kodu ve neko URI'si oluşturur)</translation>
     </message>
     <message>
-        <source>&amp;About Emercoin Core</source>
-        <translation>Emercoin Çekirdeği &amp;hakkında</translation>
+        <source>&amp;About Neko Core</source>
+        <translation>Neko Çekirdeği &amp;hakkında</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -411,20 +411,20 @@
         <translation>Kullanılmış alım adresleri ve etiketlerin listesini göster</translation>
     </message>
     <message>
-        <source>Open a emercoin: URI or payment request</source>
-        <translation>Bir emercoin: bağlantısı ya da ödeme talebi aç</translation>
+        <source>Open a neko: URI or payment request</source>
+        <translation>Bir neko: bağlantısı ya da ödeme talebi aç</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Komut satırı seçenekleri</translation>
     </message>
     <message>
-        <source>Show the Emercoin Core help message to get a list with possible Emercoin command-line options</source>
-        <translation>Emercoin komut satırı seçeneklerinin listesini elde etmek için Emercoin Çekirdeği yardım mesajını göster</translation>
+        <source>Show the Neko Core help message to get a list with possible Neko command-line options</source>
+        <translation>Neko komut satırı seçeneklerinin listesini elde etmek için Neko Çekirdeği yardım mesajını göster</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Emercoin network</source>
-        <translation><numerusform>Emercoin şebekesine %n faal bağlantı</numerusform><numerusform>Emercoin şebekesine %n faal bağlantı</numerusform></translation>
+        <source>%n active connection(s) to Neko network</source>
+        <translation><numerusform>Neko şebekesine %n faal bağlantı</numerusform><numerusform>Neko şebekesine %n faal bağlantı</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -526,7 +526,7 @@ Adres: %4
     <name>CoinControlDialog</name>
     <message>
         <source>Coin Selection</source>
-        <translation>Emercoin Seçimi</translation>
+        <translation>Neko Seçimi</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -788,8 +788,8 @@ Adres: %4
         <translation>Girilen "%1" adresi hâlihazırda adres defterinde mevcuttur.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Emercoin address.</source>
-        <translation>Girilen "%1" adresi geçerli bir Emercoin adresi değildir.</translation>
+        <source>The entered address "%1" is not a valid Neko address.</source>
+        <translation>Girilen "%1" adresi geçerli bir Neko adresi değildir.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -826,8 +826,8 @@ Adres: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Emercoin Core</source>
-        <translation>Emercoin Çekirdeği</translation>
+        <source>Neko Core</source>
+        <translation>Neko Çekirdeği</translation>
     </message>
     <message>
         <source>version</source>
@@ -838,8 +838,8 @@ Adres: %4
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Emercoin Core</source>
-        <translation>Emercoin Çekirdeği hakkında</translation>
+        <source>About Neko Core</source>
+        <translation>Neko Çekirdeği hakkında</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -885,16 +885,16 @@ Adres: %4
         <translation>Hoş geldiniz</translation>
     </message>
     <message>
-        <source>Welcome to Emercoin Core.</source>
-        <translation>Emercoin Çekirdeğine hoş geldiniz.</translation>
+        <source>Welcome to Neko Core.</source>
+        <translation>Neko Çekirdeğine hoş geldiniz.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Emercoin Core will store its data.</source>
-        <translation>Bu programı ilk kez başlattığınızdan dolayı Emercoin Çekirdeğinin verilerini nereye saklayacağını seçebilirsiniz.</translation>
+        <source>As this is the first time the program is launched, you can choose where Neko Core will store its data.</source>
+        <translation>Bu programı ilk kez başlattığınızdan dolayı Neko Çekirdeğinin verilerini nereye saklayacağını seçebilirsiniz.</translation>
     </message>
     <message>
-        <source>Emercoin Core will download and store a copy of the Emercoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Emercoin çekirdeği Emercoin blok zincirinin bir kopyasını indirip saklayacaktır. Asgari %1GB bouyutunda veri bu klasörde saklanacak ve zamanla bu boyut artacaktır. Cüzdan da bu klasörde saklanacaktır. </translation>
+        <source>Neko Core will download and store a copy of the Neko block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Neko çekirdeği Neko blok zincirinin bir kopyasını indirip saklayacaktır. Asgari %1GB bouyutunda veri bu klasörde saklanacak ve zamanla bu boyut artacaktır. Cüzdan da bu klasörde saklanacaktır. </translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -905,8 +905,8 @@ Adres: %4
         <translation>Özel bir veri klasörü kullan:</translation>
     </message>
     <message>
-        <source>Emercoin Core</source>
-        <translation>Emercoin Çekirdeği</translation>
+        <source>Neko Core</source>
+        <translation>Neko Çekirdeği</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -959,12 +959,12 @@ Adres: %4
         <translation>&amp;Esas ayarlar</translation>
     </message>
     <message>
-        <source>Automatically start Emercoin after logging in to the system.</source>
-        <translation>Sistemde oturum açıldığında Emercoin'i otomatik olarak başlat.</translation>
+        <source>Automatically start Neko after logging in to the system.</source>
+        <translation>Sistemde oturum açıldığında Neko'i otomatik olarak başlat.</translation>
     </message>
     <message>
-        <source>&amp;Start Emercoin on system login</source>
-        <translation>Emercoin'i sistem oturumuyla &amp;başlat</translation>
+        <source>&amp;Start Neko on system login</source>
+        <translation>Neko'i sistem oturumuyla &amp;başlat</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1004,7 +1004,7 @@ Adres: %4
     </message>
     <message>
         <source>Reset all client options to default.</source>
-        <translation>İstemcinin tüm seçeneklerini varsayılan değerlere geri al.</translation>
+        <translation>İstnkinin tüm seçeneklerini varsayılan değerlere geri al.</translation>
     </message>
     <message>
         <source>&amp;Reset Options</source>
@@ -1039,16 +1039,16 @@ Adres: %4
         <translation>Teyit edilmemiş para üstünü &amp;harca</translation>
     </message>
     <message>
-        <source>Automatically open the Emercoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Yönlendiricide Emercoin istemci portlarını otomatik olarak açar. Bu, sadece yönlendiricinizin UPnP desteği bulunuyorsa ve etkinse çalışabilir.</translation>
+        <source>Automatically open the Neko client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Yönlendiricide Neko istnki portlarını otomatik olarak açar. Bu, sadece yönlendiricinizin UPnP desteği bulunuyorsa ve etkinse çalışabilir.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Portları &amp;UPnP kullanarak haritala</translation>
     </message>
     <message>
-        <source>Connect to the Emercoin network through a SOCKS5 proxy.</source>
-        <translation>Emercoin şebekesine SOCKS5 vekil sunucusu vasıtasıyla bağlan.</translation>
+        <source>Connect to the Neko network through a SOCKS5 proxy.</source>
+        <translation>Neko şebekesine SOCKS5 vekil sunucusu vasıtasıyla bağlan.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1095,8 +1095,8 @@ Adres: %4
         <translation>Kullanıcı arayüzü &amp;lisanı:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Emercoin.</source>
-        <translation>Kullanıcı arayüzünün dili burada belirtilebilir. Bu ayar Emercoin tekrar başlatıldığında etkinleşecektir.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Neko.</source>
+        <translation>Kullanıcı arayüzünün dili burada belirtilebilir. Bu ayar Neko tekrar başlatıldığında etkinleşecektir.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1104,7 +1104,7 @@ Adres: %4
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Emercoin gönderildiğinde arayüzde gösterilecek varsayılan alt birimi seçiniz.</translation>
+        <translation>Neko gönderildiğinde arayüzde gösterilecek varsayılan alt birimi seçiniz.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1132,15 +1132,15 @@ Adres: %4
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
-        <translation>Değişikliklerin uygulanması için istemcinin yeniden başlatılması lazımdır.</translation>
+        <translation>Değişikliklerin uygulanması için istnkinin yeniden başlatılması lazımdır.</translation>
     </message>
     <message>
         <source>Client will be shutdown, do you want to proceed?</source>
-        <translation>İstemci kapanacaktır, devam etmek istiyor musunuz?</translation>
+        <translation>İstnki kapanacaktır, devam etmek istiyor musunuz?</translation>
     </message>
     <message>
         <source>This change would require a client restart.</source>
-        <translation>Bu değişiklik istemcinin tekrar başlatılmasını gerektirir.</translation>
+        <translation>Bu değişiklik istnkinin tekrar başlatılmasını gerektirir.</translation>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
@@ -1154,7 +1154,7 @@ Adres: %4
         <translation>Form</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Emercoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Neko network after a connection is established, but this process has not completed yet.</source>
         <translation>Görüntülenen veriler zaman aşımına uğramış olabilir. Bağlantı kurulduğunda cüzdanınız otomatik olarak şebeke ile eşleşir ancak bu işlem henüz tamamlanmamıştır.</translation>
     </message>
     <message>
@@ -1242,7 +1242,7 @@ Adres: %4
     </message>
     <message>
         <source>Payment request network doesn't match client network.</source>
-        <translation>Ödeme talebi şebekesi istemci şebekesine denk gelmiyor.</translation>
+        <translation>Ödeme talebi şebekesi istnki şebekesine denk gelmiyor.</translation>
     </message>
     <message>
         <source>Payment request has expired.</source>
@@ -1261,16 +1261,16 @@ Adres: %4
         <translation>Ödeme talebi hatası</translation>
     </message>
     <message>
-        <source>Cannot start emercoin: click-to-pay handler</source>
-        <translation>Emercoin başlatılamadı: tıkla-ve-öde yöneticisi</translation>
+        <source>Cannot start neko: click-to-pay handler</source>
+        <translation>Neko başlatılamadı: tıkla-ve-öde yöneticisi</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
         <translation>Ödeme talebini alma URL'i geçersiz: %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Emercoin address or malformed URI parameters.</source>
-        <translation>URI okunamadı! Sebebi geçersiz bir Emercoin adresi veya hatalı URI parametreleri olabilir.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Neko address or malformed URI parameters.</source>
+        <translation>URI okunamadı! Sebebi geçersiz bir Neko adresi veya hatalı URI parametreleri olabilir.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1339,8 +1339,8 @@ Adres: %4
         <translation>Meblağ</translation>
     </message>
     <message>
-        <source>Enter an Emercoin address (e.g. %1)</source>
-        <translation>Bir Emercoin adresi giriniz (mesela %1)</translation>
+        <source>Enter an Neko address (e.g. %1)</source>
+        <translation>Bir Neko adresi giriniz (mesela %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1402,7 +1402,7 @@ Adres: %4
     <name>RPCConsole</name>
     <message>
         <source>Client name</source>
-        <translation>İstemci ismi</translation>
+        <translation>İstnki ismi</translation>
     </message>
     <message>
         <source>N/A</source>
@@ -1410,7 +1410,7 @@ Adres: %4
     </message>
     <message>
         <source>Client version</source>
-        <translation>İstemci sürümü</translation>
+        <translation>İstnki sürümü</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -1565,16 +1565,16 @@ Adres: %4
         <translation>Hata ayıklama kütük dosyası</translation>
     </message>
     <message>
-        <source>Open the Emercoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Güncel veri klasöründen Emercoin hata ayıklama kütük dosyasını açar. Büyük kütük dosyaları için bu birkaç saniye alabilir.</translation>
+        <source>Open the Neko debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Güncel veri klasöründen Neko hata ayıklama kütük dosyasını açar. Büyük kütük dosyaları için bu birkaç saniye alabilir.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Konsolu temizle</translation>
     </message>
     <message>
-        <source>Welcome to the Emercoin RPC console.</source>
-        <translation>Emercoin RPC konsoluna hoş geldiniz.</translation>
+        <source>Welcome to the Neko RPC console.</source>
+        <translation>Neko RPC konsoluna hoş geldiniz.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1648,8 +1648,8 @@ Adres: %4
         <translation>&amp;Hâlihazırda bulunan bir alım adresini kullan (önerilmez)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Emercoin network.</source>
-        <translation>Talep açıldığında gösterilecek, isteğinize dayalı, ödeme talebi ile ilişkilendirilecek bir mesaj. Not: Bu mesaj ödeme ile birlikte Emercoin şebekesi üzerinden gönderilmeyecektir.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Neko network.</source>
+        <translation>Talep açıldığında gösterilecek, isteğinize dayalı, ödeme talebi ile ilişkilendirilecek bir mesaj. Not: Bu mesaj ödeme ile birlikte Neko şebekesi üzerinden gönderilmeyecektir.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1798,7 +1798,7 @@ Adres: %4
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Emercoin yolla</translation>
+        <translation>Neko yolla</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1885,8 +1885,8 @@ Adres: %4
         <translation>toplam asgari</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for emercoin transactions than the network can process.</source>
-        <translation>Asgari ücreti ödemek, bloklarda boşluktan daha az muamele hacmi olduğu sürece bir sorun çıkarmaz. Fakat şebekenin işleyecebileceğinden daha çok emercoin muameleleri talebi olduğunda bunun asla teyit edilmeyen bir muamele olabileceğinin farkında olmalısınız.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for neko transactions than the network can process.</source>
+        <translation>Asgari ücreti ödemek, bloklarda boşluktan daha az muamele hacmi olduğu sürece bir sorun çıkarmaz. Fakat şebekenin işleyecebileceğinden daha çok neko muameleleri talebi olduğunda bunun asla teyit edilmeyen bir muamele olabileceğinin farkında olmalısınız.</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2037,8 +2037,8 @@ Adres: %4
         <translation>Tahmini olarak %1 blok içinde teyide başlanacaktır.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Emercoin address</source>
-        <translation>Uyarı: geçersiz Emercoin adresi</translation>
+        <source>Warning: Invalid Neko address</source>
+        <translation>Uyarı: geçersiz Neko adresi</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2088,8 +2088,8 @@ Adres: %4
         <translation>Bu, normal bir ödemedir.</translation>
     </message>
     <message>
-        <source>The Emercoin address to send the payment to</source>
-        <translation>Ödemenin yollanacağı Emercoin adresi</translation>
+        <source>The Neko address to send the payment to</source>
+        <translation>Ödemenin yollanacağı Neko adresi</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2120,8 +2120,8 @@ Adres: %4
         <translation>Kullanılmış adres listesine eklemek için bu adrese bir etiket girin</translation>
     </message>
     <message>
-        <source>A message that was attached to the emercoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Emercoin network.</source>
-        <translation>Emercoin: URI'siyle ilişkili ve bilginiz için muameleyle saklanacak bir mesaj. Not: Bu mesaj Emercoin şebekesi üzerinden gönderilmeyecektir.</translation>
+        <source>A message that was attached to the neko: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Neko network.</source>
+        <translation>Neko: URI'siyle ilişkili ve bilginiz için muameleyle saklanacak bir mesaj. Not: Bu mesaj Neko şebekesi üzerinden gönderilmeyecektir.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -2139,8 +2139,8 @@ Adres: %4
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Emercoin Core is shutting down...</source>
-        <translation>Emercoin Çekirdeği kapanıyor...</translation>
+        <source>Neko Core is shutting down...</source>
+        <translation>Neko Çekirdeği kapanıyor...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2162,8 +2162,8 @@ Adres: %4
         <translation>Bir adresin sizin olduğunu ispatlamak için adresinizle mesaj imzalayabilirsiniz. Oltalama saldırılarının kimliğinizi imzanızla elde etmeyi deneyebilecekleri için belirsiz hiçbir şey imzalamamaya dikkat ediniz. Sadece ayrıntılı açıklaması olan ve tümüne katıldığınız ifadeleri imzalayınız.</translation>
     </message>
     <message>
-        <source>The Emercoin address to sign the message with</source>
-        <translation>Mesajın imzalanmasında kullanılacak Emercoin adresi</translation>
+        <source>The Neko address to sign the message with</source>
+        <translation>Mesajın imzalanmasında kullanılacak Neko adresi</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2194,8 +2194,8 @@ Adres: %4
         <translation>Güncel imzayı sistem panosuna kopyala</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Emercoin address</source>
-        <translation>Bu Emercoin adresinin sizin olduğunu ispatlamak için mesajı imzalayın</translation>
+        <source>Sign the message to prove you own this Neko address</source>
+        <translation>Bu Neko adresinin sizin olduğunu ispatlamak için mesajı imzalayın</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2218,12 +2218,12 @@ Adres: %4
         <translation>İmza için kullanılan adresi, mesajı (satır sonları, boşluklar, sekmeler vs. karakterleri tam olarak kopyaladığınızdan emin olunuz) ve imzayı aşağıda giriniz. Bir ortadaki adam saldırısı tarafından kandırılmaya mâni olmak için imzadan, imzalı mesajın içeriğini aşan bir anlam çıkarmamaya dikkat ediniz.</translation>
     </message>
     <message>
-        <source>The Emercoin address the message was signed with</source>
-        <translation>Mesajın imzalanmasında kullanılan Emercoin adresi</translation>
+        <source>The Neko address the message was signed with</source>
+        <translation>Mesajın imzalanmasında kullanılan Neko adresi</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Emercoin address</source>
-        <translation>Belirtilen Emercoin adresi ile imzalandığını doğrulamak için mesajı kontrol et</translation>
+        <source>Verify the message to ensure it was signed with the specified Neko address</source>
+        <translation>Belirtilen Neko adresi ile imzalandığını doğrulamak için mesajı kontrol et</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2289,12 +2289,12 @@ Adres: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Emercoin Core</source>
-        <translation>Emercoin Çekirdeği</translation>
+        <source>Neko Core</source>
+        <translation>Neko Çekirdeği</translation>
     </message>
     <message>
-        <source>The Emercoin Core developers</source>
-        <translation>Emercoin Çekirdeği geliştiricileri</translation>
+        <source>The Neko Core developers</source>
+        <translation>Neko Çekirdeği geliştiricileri</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2420,7 +2420,7 @@ Adres: %4
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Oluşturulan emercoin'lerin harcanabilmelerinden önce %1 blok beklemeleri gerekmektedir. Bu blok, oluşturduğunuzda, blok zincirine eklenmesi için ağda yayınlandı. Zincire eklenmesi başarısız olursa, durumu "kabul edilmedi" olarak değiştirilecek ve harcanamayacaktır. Bu, bazen başka bir düğüm sizden birkaç saniye önce ya da sonra blok oluşturursa meydana gelebilir.</translation>
+        <translation>Oluşturulan neko'lerin harcanabilmelerinden önce %1 blok beklemeleri gerekmektedir. Bu blok, oluşturduğunuzda, blok zincirine eklenmesi için ağda yayınlandı. Zincire eklenmesi başarısız olursa, durumu "kabul edilmedi" olarak değiştirilecek ve harcanamayacaktır. Bu, bazen başka bir düğüm sizden birkaç saniye önce ya da sonra blok oluşturursa meydana gelebilir.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -2738,7 +2738,7 @@ Adres: %4
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Emercoin yolla</translation>
+        <translation>Neko yolla</translation>
     </message>
 </context>
 <context>
@@ -2840,11 +2840,11 @@ Adres: %4
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation>Bu yayın öncesi bir deneme sürümüdür - tüm riski siz üstlenmiş olursunuz - emercoin oluşturmak ya da ticari uygulamalar için kullanmayınız</translation>
+        <translation>Bu yayın öncesi bir deneme sürümüdür - tüm riski siz üstlenmiş olursunuz - neko oluşturmak ya da ticari uygulamalar için kullanmayınız</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Emercoin Core is probably already running.</source>
-        <translation>Bu bilgisayarda %s unsuruna bağlanılamadı. Emercoin Çekirdeği muhtemelen hâlihazırda çalışmaktadır.</translation>
+        <source>Unable to bind to %s on this computer. Neko Core is probably already running.</source>
+        <translation>Bu bilgisayarda %s unsuruna bağlanılamadı. Neko Çekirdeği muhtemelen hâlihazırda çalışmaktadır.</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
@@ -3027,8 +3027,8 @@ Adres: %4
         <translation>Belirtilen adrese bağlan ve JSON RPC bağlantıları için dinlemeye geç. IPv6 için [makine]:port imlasını kullanınız. Bu seçenek birden çok kez belirtilebilir (varsayılan: tüm arayüzlere bağlan)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Emercoin Core is probably already running.</source>
-        <translation>%s veri dizininde kilit elde edilemedi. Emercoin Çekirdeği muhtemelen hâlihazırda çalışmaktadır.</translation>
+        <source>Cannot obtain a lock on data directory %s. Neko Core is probably already running.</source>
+        <translation>%s veri dizininde kilit elde edilemedi. Neko Çekirdeği muhtemelen hâlihazırda çalışmaktadır.</translation>
     </message>
     <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
@@ -3051,12 +3051,12 @@ Adres: %4
         <translation>İlgili bir uyarı alındığında ya da gerçekten uzun bir çatallama gördüğümüzde komutu çalıştır (komuttaki %s mesaj ile değiştirilir)</translation>
     </message>
     <message>
-        <source>Fees (in EMC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Kb başına EMC olarak bundan düşük ücretler aktarım için sıfır değerinde ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in NK/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Kb başına NK olarak bundan düşük ücretler aktarım için sıfır değerinde ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
-        <source>Fees (in EMC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Kb başına EMC olarak bundan düşük ücretler muamele oluşturulması için sıfır değerinde ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in NK/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Kb başına NK olarak bundan düşük ücretler muamele oluşturulması için sıfır değerinde ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
@@ -3088,34 +3088,34 @@ Adres: %4
     </message>
     <message>
         <source>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</source>
-        <translation>Etkinse emercoin oluşuturulmasına atanan iş parçacığı sayısını ayarla (-1 = tüm çekirdekler, varsayılan: %d)</translation>
+        <translation>Etkinse neko oluşuturulmasına atanan iş parçacığı sayısını ayarla (-1 = tüm çekirdekler, varsayılan: %d)</translation>
     </message>
     <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
         <translation>Bu ürün OpenSSL projesi tarafından OpenSSL araç takımı (http://www.openssl.org/) için geliştirilen yazılımlar, Eric Young (eay@cryptsoft.com) tarafından hazırlanmış şifreleme yazılımları ve Thomas Bernard tarafından programlanmış UPnP yazılımı içerir.</translation>
     </message>
     <message>
-        <source>To use emercoind, or the -server option to emercoin-qt, you must set an rpcpassword in the configuration file:
+        <source>To use nekod, or the -server option to neko-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=emercoinrpc
+rpcuser=nekorpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Emercoin Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "Neko Alert" admin@foo.com
 </source>
-        <translation>emercoind ya da emercoin-qt ile -server seçeneğini kullanmak için yapılandırma dosyasında bir rpc parolası belirtmeniz gerekir:
+        <translation>nekod ya da neko-qt ile -server seçeneğini kullanmak için yapılandırma dosyasında bir rpc parolası belirtmeniz gerekir:
 %s
 Aşağıdaki rastgele oluşturulan parolayı kullanmanız tavsiye edilir:
-rpcuser=emercoinrpc
+rpcuser=nekorpc
 rpcpassword=%s
 (bu parolayı hatırlamanız gerekli değildir)
 Kullanıcı ismi ile parolanın FARKLI olmaları gerekir.
 Dosya mevcut değilse, sadece sahibi için okumayla sınırlı izin ile oluşturunuz.
 Sorunlar hakkında bildiri almak için alertnotify unsurunu ayarlamanız tavsiye edilir;
-mesela: alertnotify=echo %%s | mail -s "Emercoin Alert" admin@foo.com
+mesela: alertnotify=echo %%s | mail -s "Neko Alert" admin@foo.com
 </translation>
     </message>
     <message>
@@ -3123,8 +3123,8 @@ mesela: alertnotify=echo %%s | mail -s "Emercoin Alert" admin@foo.com
         <translation>İkaz: -maxtxfee çok yüksek bir değere ayarlanmış! Bu denli yüksek ücretler tek bir muamelede ödenebilir.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Emercoin Core will not work properly.</source>
-        <translation>Uyarı: Lütfen bilgisayarınızın saat ve tarihinin doğru olduğunu kontol ediniz! Saatinizde gecikme varsa Emercoin Çekirdeği doğru şekilde çalışamaz.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Neko Core will not work properly.</source>
+        <translation>Uyarı: Lütfen bilgisayarınızın saat ve tarihinin doğru olduğunu kontol ediniz! Saatinizde gecikme varsa Neko Çekirdeği doğru şekilde çalışamaz.</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
@@ -3144,15 +3144,15 @@ mesela: alertnotify=echo %%s | mail -s "Emercoin Alert" admin@foo.com
     </message>
     <message>
         <source>Copyright (C) 2013-%i The Emercoin Core Developers</source>
-        <translation>Telif hakkı 2013-%i Emercoin Çekirdeği Geliştiricileri</translation>
+        <translation>Telif hakkı 2013-%i Neko Çekirdeği Geliştiricileri</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
         <translation>-rpcbind değeri %s şebeke adresi olarak ayrıştırılamadı</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Emercoin Core</source>
-        <translation>wallet.dat dosyasının yüklenmesinde hata: Cüzdan Emercoin Çekirdeğinin daha yeni bir sürümünü gerektirmektedir</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Neko Core</source>
+        <translation>wallet.dat dosyasının yüklenmesinde hata: Cüzdan Neko Çekirdeğinin daha yeni bir sürümünü gerektirmektedir</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -3163,16 +3163,16 @@ mesela: alertnotify=echo %%s | mail -s "Emercoin Alert" admin@foo.com
         <translation>Hata: Deskteklenmeyen -tor argümanı bulundu, -onion kullanınız.</translation>
     </message>
     <message>
-        <source>Fee (in EMC/Kb) to add to transactions you send (default: %s)</source>
-        <translation>Yolladığınız muamelelere kB başına EMC olarak eklenecek ücret (varsayılan: %s)</translation>
+        <source>Fee (in NK/Kb) to add to transactions you send (default: %s)</source>
+        <translation>Yolladığınız muamelelere kB başına NK olarak eklenecek ücret (varsayılan: %s)</translation>
     </message>
     <message>
         <source>Information</source>
         <translation>Bilgi</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Emercoin Core is shutting down.</source>
-        <translation>Başlatma sınaması başarısız oldu. Emercoin Çekirdeği kapatılıyor.</translation>
+        <source>Initialization sanity check failed. Neko Core is shutting down.</source>
+        <translation>Başlatma sınaması başarısız oldu. Neko Çekirdeği kapatılıyor.</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
@@ -3208,7 +3208,7 @@ mesela: alertnotify=echo %%s | mail -s "Emercoin Alert" admin@foo.com
     </message>
     <message>
         <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>RPC SSL seçenekleri: (SSL kurulumu yönergeleri için Emercoin vikisine bakınız)</translation>
+        <translation>RPC SSL seçenekleri: (SSL kurulumu yönergeleri için Neko vikisine bakınız)</translation>
     </message>
     <message>
         <source>RPC server options:</source>
@@ -3240,7 +3240,7 @@ mesela: alertnotify=echo %%s | mail -s "Emercoin Alert" admin@foo.com
     </message>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>İstemci başlatıldığında debug.log dosyasını küçült (varsayılan: -debug bulunmadığında 1)</translation>
+        <translation>İstnki başlatıldığında debug.log dosyasını küçült (varsayılan: -debug bulunmadığında 1)</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
@@ -3279,8 +3279,8 @@ mesela: alertnotify=echo %%s | mail -s "Emercoin Alert" admin@foo.com
         <translation>JSON-RPC bağlantıları için kullanıcı ismi</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Emercoin Core to complete</source>
-        <translation>Cüzdanın tekrar yazılması gerekmektedir: tamamlamak için Emercoin Çekirdeğini yeniden başlatın</translation>
+        <source>Wallet needed to be rewritten: restart Neko Core to complete</source>
+        <translation>Cüzdanın tekrar yazılması gerekmektedir: tamamlamak için Neko Çekirdeğini yeniden başlatın</translation>
     </message>
     <message>
         <source>Warning</source>
@@ -3404,7 +3404,7 @@ mesela: alertnotify=echo %%s | mail -s "Emercoin Alert" admin@foo.com
     </message>
     <message>
         <source>Generate coins (default: %u)</source>
-        <translation>Emercoin oluştur (varsayılan: %u)</translation>
+        <translation>Neko oluştur (varsayılan: %u)</translation>
     </message>
     <message>
         <source>How many blocks to check at startup (default: %u, 0 = all)</source>

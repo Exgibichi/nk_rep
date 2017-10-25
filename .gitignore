@@ -2,11 +2,11 @@
 
 *.exe
 src/bitcoin
-src/emercoind
-src/emercoin-cli
-src/emercoin-tx
-src/test/test_emercoin
-src/qt/test/test_emercoin-qt
+src/nekod
+src/neko-cli
+src/neko-tx
+src/test/test_neko
+src/qt/test/test_neko-qt
 
 # autoreconf
 Makefile.in
@@ -74,12 +74,12 @@ src/qt/test/moc*.cpp
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-emercoin-qt
-Emercoin-Qt.app
+neko-qt
+Neko-Qt.app
 
 # Unit-tests
 Makefile.test
-emercoin-qt_test
+neko-qt_test
 src/test/buildenv.py
 
 # Resources cpp

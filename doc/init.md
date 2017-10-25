@@ -62,10 +62,10 @@ can then be controlled by group membership.
 
 Installing this .service file consists on just copying it to
 /usr/lib/systemd/system directory, followed by the command
-"systemctl daemon-reload" in order to update running systemd configuration.
+"systnktl daemon-reload" in order to update running systemd configuration.
 
-To test, run "systemctl start bitcoind" and to enable for system startup run
-"systemctl enable bitcoind"
+To test, run "systnktl start bitcoind" and to enable for system startup run
+"systnktl enable bitcoind"
 
 4b) OpenRC
 

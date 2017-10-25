@@ -43,11 +43,11 @@ class Exch {
   virtual int Remain(const string &txkey) = 0;
 
 
-  // Returns extimated EMC to pay for specific pay_amount
+  // Returns extimated NK to pay for specific pay_amount
   // Must be called after MarketInfo
-  double EstimatedEMC(double pay_amount) const;
+  double EstimatedNK(double pay_amount) const;
 
-  string m_retAddr; // Return EMC Addr
+  string m_retAddr; // Return NK Addr
 
   // MarketInfo fills these params
   string m_pair;
@@ -57,9 +57,9 @@ class Exch {
   double m_minerFee;
 
   // Send fills these params + m_rate above
-  string m_depAddr;	// Address to pay EMC
+  string m_depAddr;	// Address to pay NK
   string m_outAddr;	// Address to pay from exchange
-  double m_depAmo;	// amount in EMC
+  double m_depAmo;	// amount in NK
   double m_outAmo;	// Amount transferred to BTC
   string m_txKey;	// TX reference key
 
@@ -68,7 +68,7 @@ class Exch {
   // Throws exception if error
   UniValue httpsFetch(const char *get, const UniValue *post);
 
-  // Get input path within server, like: /api/marketinfo/emc_btc.json
+  // Get input path within server, like: /api/marketinfo/nk_btc.json
   // Called from exchange-specific MarketInfo()
   // Fill MarketInfo from exchange.
   // Throws exception if error

@@ -66,12 +66,12 @@
         <translation>Mottaksadresser</translation>
     </message>
     <message>
-        <source>These are your Emercoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dette er dine Emercoin-adresser for å sende betalinger. Alltid sjekk beløp og mottakeradresse før sending av mynter.</translation>
+        <source>These are your Neko addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dette er dine Neko-adresser for å sende betalinger. Alltid sjekk beløp og mottakeradresse før sending av mynter.</translation>
     </message>
     <message>
-        <source>These are your Emercoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dette er dine Emercoin-adresser for å sende betalinger. Det er anbefalt å bruk en ny mottaksadresse for hver transaksjon.</translation>
+        <source>These are your Neko addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dette er dine Neko-adresser for å sende betalinger. Det er anbefalt å bruk en ny mottaksadresse for hver transaksjon.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -164,8 +164,8 @@
         <translation>Bekreft kryptering av lommebok</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR EMERCOINS&lt;/b&gt;!</source>
-        <translation>Advarsel: Hvis du krypterer lommeboken og mister adgangsfrasen, så vil du &lt;b&gt;MISTE ALLE DINE EMERCOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NEKOS&lt;/b&gt;!</source>
+        <translation>Advarsel: Hvis du krypterer lommeboken og mister adgangsfrasen, så vil du &lt;b&gt;MISTE ALLE DINE NEKOS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -188,8 +188,8 @@
         <translation>Oppgi adgangsfrasen til lommeboken.&lt;br/&gt;Vennligst bruk en adgangsfrase med &lt;b&gt;ti eller flere tilfeldige tegn&lt;/b&gt;, eller &lt;b&gt;åtte eller flere ord&lt;/b&gt;.</translation>
     </message>
     <message>
-        <source>Emercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your emercoins from being stolen by malware infecting your computer.</source>
-        <translation>Emercoin vil nå lukkes for å fullføre krypteringsprosessen. Husk at kryptering av lommeboken ikke fullt ut kan beskytte dine emercoins fra å bli stjålet om skadevare infiserer datamaskinen.</translation>
+        <source>Neko will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your nekos from being stolen by malware infecting your computer.</source>
+        <translation>Neko vil nå lukkes for å fullføre krypteringsprosessen. Husk at kryptering av lommeboken ikke fullt ut kan beskytte dine nekos fra å bli stjålet om skadevare infiserer datamaskinen.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -295,8 +295,8 @@
         <translation>Åpne &amp;URI...</translation>
     </message>
     <message>
-        <source>Emercoin Core client</source>
-        <translation>Emercoin Core-klient</translation>
+        <source>Neko Core client</source>
+        <translation>Neko Core-klient</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -307,12 +307,12 @@
         <translation>Reindekserer blokker på harddisk...</translation>
     </message>
     <message>
-        <source>Send coins to an Emercoin address</source>
-        <translation>Send til en Emercoin-adresse</translation>
+        <source>Send coins to an Neko address</source>
+        <translation>Send til en Neko-adresse</translation>
     </message>
     <message>
-        <source>Modify configuration options for Emercoin</source>
-        <translation>Endre oppsett for Emercoin</translation>
+        <source>Modify configuration options for Neko</source>
+        <translation>Endre oppsett for Neko</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -335,8 +335,8 @@
         <translation>&amp;Verifiser melding...</translation>
     </message>
     <message>
-        <source>Emercoin</source>
-        <translation>Emercoin</translation>
+        <source>Neko</source>
+        <translation>Neko</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -351,8 +351,8 @@
         <translation>&amp;Motta</translation>
     </message>
     <message>
-        <source>Show information about Emercoin Core</source>
-        <translation>Vis informasjon om Emercoin Core</translation>
+        <source>Show information about Neko Core</source>
+        <translation>Vis informasjon om Neko Core</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -367,12 +367,12 @@
         <translation>Krypter de private nøklene som tilhører lommeboken din</translation>
     </message>
     <message>
-        <source>Sign messages with your Emercoin addresses to prove you own them</source>
-        <translation>Signer en melding med Emercoin-adressene dine for å bevise at du eier dem</translation>
+        <source>Sign messages with your Neko addresses to prove you own them</source>
+        <translation>Signer en melding med Neko-adressene dine for å bevise at du eier dem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Emercoin addresses</source>
-        <translation>Bekreft meldinger for å være sikker på at de ble signert av en angitt Emercoin-adresse</translation>
+        <source>Verify messages to ensure they were signed with specified Neko addresses</source>
+        <translation>Bekreft meldinger for å være sikker på at de ble signert av en angitt Neko-adresse</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -391,16 +391,16 @@
         <translation>Verktøylinje for faner</translation>
     </message>
     <message>
-        <source>Emercoin Core</source>
-        <translation>Emercoin Core</translation>
+        <source>Neko Core</source>
+        <translation>Neko Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and emercoin: URIs)</source>
-        <translation>Forespør betalinger (genererer QR-koder og emercoin: URIer)</translation>
+        <source>Request payments (generates QR codes and neko: URIs)</source>
+        <translation>Forespør betalinger (genererer QR-koder og neko: URIer)</translation>
     </message>
     <message>
-        <source>&amp;About Emercoin Core</source>
-        <translation>&amp;Om Emercoin Core</translation>
+        <source>&amp;About Neko Core</source>
+        <translation>&amp;Om Neko Core</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -411,20 +411,20 @@
         <translation>Vis listen over bruke mottaksadresser og merkelapper</translation>
     </message>
     <message>
-        <source>Open a emercoin: URI or payment request</source>
-        <translation>Åpne en Emercoin: URI eller betalingsetterspørring</translation>
+        <source>Open a neko: URI or payment request</source>
+        <translation>Åpne en Neko: URI eller betalingsetterspørring</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Kommandolinjevalg</translation>
     </message>
     <message>
-        <source>Show the Emercoin Core help message to get a list with possible Emercoin command-line options</source>
-        <translation>Vis Emercoin Core hjelpemeldingen for å få en liste med mulige kommandolinjevalg</translation>
+        <source>Show the Neko Core help message to get a list with possible Neko command-line options</source>
+        <translation>Vis Neko Core hjelpemeldingen for å få en liste med mulige kommandolinjevalg</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Emercoin network</source>
-        <translation><numerusform>%n aktiv forbindelse til Emercoin-nettverket</numerusform><numerusform>%n aktive forbindelser til Emercoin-nettverket</numerusform></translation>
+        <source>%n active connection(s) to Neko network</source>
+        <translation><numerusform>%n aktiv forbindelse til Neko-nettverket</numerusform><numerusform>%n aktive forbindelser til Neko-nettverket</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -788,8 +788,8 @@ Adresse: %4
         <translation>Den oppgitte adressen "%1" er allerede i adresseboken.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Emercoin address.</source>
-        <translation>Den angitte adressed "%1" er ikke en gyldig Emercoin-adresse.</translation>
+        <source>The entered address "%1" is not a valid Neko address.</source>
+        <translation>Den angitte adressed "%1" er ikke en gyldig Neko-adresse.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -826,8 +826,8 @@ Adresse: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Emercoin Core</source>
-        <translation>Emercoin Core</translation>
+        <source>Neko Core</source>
+        <translation>Neko Core</translation>
     </message>
     <message>
         <source>version</source>
@@ -838,8 +838,8 @@ Adresse: %4
         <translation> (%1-bit)</translation>
     </message>
     <message>
-        <source>About Emercoin Core</source>
-        <translation>Om Emercoin Core</translation>
+        <source>About Neko Core</source>
+        <translation>Om Neko Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -885,16 +885,16 @@ Adresse: %4
         <translation>Velkommen</translation>
     </message>
     <message>
-        <source>Welcome to Emercoin Core.</source>
-        <translation>Velkommen til Emercoin Core.</translation>
+        <source>Welcome to Neko Core.</source>
+        <translation>Velkommen til Neko Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Emercoin Core will store its data.</source>
-        <translation>Siden dette er første gang programmet starter, kan du nå velge hvor Emercoin Core skal lagre sine data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Neko Core will store its data.</source>
+        <translation>Siden dette er første gang programmet starter, kan du nå velge hvor Neko Core skal lagre sine data.</translation>
     </message>
     <message>
-        <source>Emercoin Core will download and store a copy of the Emercoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Emercoin Core vil laste ned og lagre en kopi av Emercoin sin blokkjede. Minst %1GB av data vil bli lagret i denne mappen, og det vil vokse over tid. Lommeboken vil også bli lagret i denne mappen.</translation>
+        <source>Neko Core will download and store a copy of the Neko block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Neko Core vil laste ned og lagre en kopi av Neko sin blokkjede. Minst %1GB av data vil bli lagret i denne mappen, og det vil vokse over tid. Lommeboken vil også bli lagret i denne mappen.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -905,8 +905,8 @@ Adresse: %4
         <translation>Bruk en egendefinert datamappe:</translation>
     </message>
     <message>
-        <source>Emercoin Core</source>
-        <translation>Emercoin Core</translation>
+        <source>Neko Core</source>
+        <translation>Neko Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -959,12 +959,12 @@ Adresse: %4
         <translation>&amp;Hoved</translation>
     </message>
     <message>
-        <source>Automatically start Emercoin after logging in to the system.</source>
-        <translation>Start Emercoin automatisk etter innlogging.</translation>
+        <source>Automatically start Neko after logging in to the system.</source>
+        <translation>Start Neko automatisk etter innlogging.</translation>
     </message>
     <message>
-        <source>&amp;Start Emercoin on system login</source>
-        <translation>&amp;Start Emercoin ved systeminnlogging</translation>
+        <source>&amp;Start Neko on system login</source>
+        <translation>&amp;Start Neko ved systeminnlogging</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1039,16 +1039,16 @@ Adresse: %4
         <translation>&amp;Bruk ubekreftet veksel</translation>
     </message>
     <message>
-        <source>Automatically open the Emercoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Åpne automatisk Emercoin klientporten på ruteren. Dette virker kun om din ruter støtter UPnP og dette er påslått.</translation>
+        <source>Automatically open the Neko client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Åpne automatisk Neko klientporten på ruteren. Dette virker kun om din ruter støtter UPnP og dette er påslått.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Sett opp port ved hjelp av &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Emercoin network through a SOCKS5 proxy.</source>
-        <translation>Koble til Emercoin-nettverket gjennom en SOCKS5 proxy.</translation>
+        <source>Connect to the Neko network through a SOCKS5 proxy.</source>
+        <translation>Koble til Neko-nettverket gjennom en SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1095,8 +1095,8 @@ Adresse: %4
         <translation>&amp;Språk for brukergrensesnitt</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Emercoin.</source>
-        <translation>Språket for brukergrensesnittet kan settes her. Innstillingen trer i kraft ved omstart av Emercoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Neko.</source>
+        <translation>Språket for brukergrensesnittet kan settes her. Innstillingen trer i kraft ved omstart av Neko.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1104,7 +1104,7 @@ Adresse: %4
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Velg standard delt enhet for visning i grensesnittet og for sending av emercoins.</translation>
+        <translation>Velg standard delt enhet for visning i grensesnittet og for sending av nekos.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1154,8 +1154,8 @@ Adresse: %4
         <translation>Skjema</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Emercoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informasjonen som vises kan være foreldet. Din lommebok synkroniseres automatisk med Emercoin-nettverket etter at tilkobling er opprettet, men denne prosessen er ikke ferdig enda.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Neko network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informasjonen som vises kan være foreldet. Din lommebok synkroniseres automatisk med Neko-nettverket etter at tilkobling er opprettet, men denne prosessen er ikke ferdig enda.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1261,16 +1261,16 @@ Adresse: %4
         <translation>Betalingsetterspørringsfeil</translation>
     </message>
     <message>
-        <source>Cannot start emercoin: click-to-pay handler</source>
-        <translation>Kan ikke starte Emercoin: klikk-og-betal håndterer</translation>
+        <source>Cannot start neko: click-to-pay handler</source>
+        <translation>Kan ikke starte Neko: klikk-og-betal håndterer</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
         <translation>Hentelenke for betalingsetterspørring er ugyldig: %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Emercoin address or malformed URI parameters.</source>
-        <translation>URI kan ikke fortolkes! Dette kan være forårsaket av en ugyldig Emercoin-adresse eller feilformede URI-parametre.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Neko address or malformed URI parameters.</source>
+        <translation>URI kan ikke fortolkes! Dette kan være forårsaket av en ugyldig Neko-adresse eller feilformede URI-parametre.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1339,8 +1339,8 @@ Adresse: %4
         <translation>Beløp</translation>
     </message>
     <message>
-        <source>Enter an Emercoin address (e.g. %1)</source>
-        <translation>Oppgi en Emercoin-adresse (f.eks. %1)</translation>
+        <source>Enter an Neko address (e.g. %1)</source>
+        <translation>Oppgi en Neko-adresse (f.eks. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1565,16 +1565,16 @@ Adresse: %4
         <translation>Loggfil for feilsøk</translation>
     </message>
     <message>
-        <source>Open the Emercoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Åpne Emercoin sin loggfil for feilsøk fra den gjeldende datamappen. Dette kan ta noen sekunder for store loggfiler.</translation>
+        <source>Open the Neko debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Åpne Neko sin loggfil for feilsøk fra den gjeldende datamappen. Dette kan ta noen sekunder for store loggfiler.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Tøm konsoll</translation>
     </message>
     <message>
-        <source>Welcome to the Emercoin RPC console.</source>
-        <translation>Velkommen til Emercoin sin RPC-konsoll.</translation>
+        <source>Welcome to the Neko RPC console.</source>
+        <translation>Velkommen til Neko sin RPC-konsoll.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1648,8 +1648,8 @@ Adresse: %4
         <translation>Gj&amp;enbruk en eksisterende mottaksadresse (ikke anbefalt)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Emercoin network.</source>
-        <translation>En valgfri melding å tilknytte betalingsetterspørringen, som vil bli vist når forespørselen er åpnet. Meldingen vil ikke bli sendt med betalingen over Emercoin-nettverket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Neko network.</source>
+        <translation>En valgfri melding å tilknytte betalingsetterspørringen, som vil bli vist når forespørselen er åpnet. Meldingen vil ikke bli sendt med betalingen over Neko-nettverket.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1798,7 +1798,7 @@ Adresse: %4
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Send Emercoins</translation>
+        <translation>Send Nekos</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1885,8 +1885,8 @@ Adresse: %4
         <translation>minstebeløp</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for emercoin transactions than the network can process.</source>
-        <translation>Betaling av bare minimumsavgiften går helt fint så lenge det er mindre transaksjonsvolum enn plass i blokkene. Men vær klar over at dette kan ende opp i en transaksjon som aldri blir bekreftet når det er mer etterspørsel etter Emercoin-transaksjoner enn nettverket kan behandle.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for neko transactions than the network can process.</source>
+        <translation>Betaling av bare minimumsavgiften går helt fint så lenge det er mindre transaksjonsvolum enn plass i blokkene. Men vær klar over at dette kan ende opp i en transaksjon som aldri blir bekreftet når det er mer etterspørsel etter Neko-transaksjoner enn nettverket kan behandle.</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -1958,7 +1958,7 @@ Adresse: %4
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Bekreft sending av emercoins</translation>
+        <translation>Bekreft sending av nekos</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -2041,8 +2041,8 @@ Adresse: %4
         <translation>Beregner å begynne bekreftelse innen %1 blokk(er).</translation>
     </message>
     <message>
-        <source>Warning: Invalid Emercoin address</source>
-        <translation>Advarsel: Ugyldig Emercoin-adresse</translation>
+        <source>Warning: Invalid Neko address</source>
+        <translation>Advarsel: Ugyldig Neko-adresse</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2092,8 +2092,8 @@ Adresse: %4
         <translation>Dette er en normal betaling.</translation>
     </message>
     <message>
-        <source>The Emercoin address to send the payment to</source>
-        <translation>Emercoin-adressen betalingen skal sendes til</translation>
+        <source>The Neko address to send the payment to</source>
+        <translation>Neko-adressen betalingen skal sendes til</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2124,8 +2124,8 @@ Adresse: %4
         <translation>Skriv inn en merkelapp for denne adressen for å legge den til listen av brukte adresser</translation>
     </message>
     <message>
-        <source>A message that was attached to the emercoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Emercoin network.</source>
-        <translation>En melding som var tilknyttet emercoinen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over Emercoin-nettverket.</translation>
+        <source>A message that was attached to the neko: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Neko network.</source>
+        <translation>En melding som var tilknyttet nekoen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over Neko-nettverket.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -2143,8 +2143,8 @@ Adresse: %4
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Emercoin Core is shutting down...</source>
-        <translation>Emercoin Core lukker...</translation>
+        <source>Neko Core is shutting down...</source>
+        <translation>Neko Core lukker...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2166,8 +2166,8 @@ Adresse: %4
         <translation>Du kan signere meldinger med dine adresser for å bevise at du eier dem. Ikke signer vage meldinger da phishing-angrep kan prøve å lure deg til å signere din identitet over til andre. Signer kun fullt detaljerte utsagn som du er enig i.</translation>
     </message>
     <message>
-        <source>The Emercoin address to sign the message with</source>
-        <translation>Emercoin-adressen meldingen skal signeres med</translation>
+        <source>The Neko address to sign the message with</source>
+        <translation>Neko-adressen meldingen skal signeres med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2198,8 +2198,8 @@ Adresse: %4
         <translation>Kopier valgt signatur til utklippstavle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Emercoin address</source>
-        <translation>Signer meldingen for å bevise at du eier denne Emercoin-adressen</translation>
+        <source>Sign the message to prove you own this Neko address</source>
+        <translation>Signer meldingen for å bevise at du eier denne Neko-adressen</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2222,12 +2222,12 @@ Adresse: %4
         <translation>Angi adresse for signering, melding (vær sikker på at du kopierer linjeskift, mellomrom, tab, etc. helt nøyaktig) og signatur under for å verifisere meldingen. Vær forsiktig med at du ikke gir signaturen mer betydning enn det som faktisk står i meldingen, for å unngå å bli lurt av såkalte "man-in-the-middle" angrep.</translation>
     </message>
     <message>
-        <source>The Emercoin address the message was signed with</source>
-        <translation>Emercoin-adressen meldingen ble signert med</translation>
+        <source>The Neko address the message was signed with</source>
+        <translation>Neko-adressen meldingen ble signert med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Emercoin address</source>
-        <translation>Verifiser meldingen for å være sikker på at den ble signert av den angitte Emercoin-adressen</translation>
+        <source>Verify the message to ensure it was signed with the specified Neko address</source>
+        <translation>Verifiser meldingen for å være sikker på at den ble signert av den angitte Neko-adressen</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2293,12 +2293,12 @@ Adresse: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Emercoin Core</source>
-        <translation>Emercoin Core</translation>
+        <source>Neko Core</source>
+        <translation>Neko Core</translation>
     </message>
     <message>
-        <source>The Emercoin Core developers</source>
-        <translation>Emercoin Core utviklerne</translation>
+        <source>The Neko Core developers</source>
+        <translation>Neko Core utviklerne</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2424,7 +2424,7 @@ Adresse: %4
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Genererte emercoins må modnes %1 blokker før de kan brukes. Da du genererte denne blokken ble den kringkastet på nettverket for å bli lagt til i kjeden av blokker. Hvis den ikke kommer med i kjeden vil den endre seg til "ikke akseptert" og pengene vil ikke kunne brukes. Dette vil noen ganger skje hvis en annen node genererer en blokk noen sekunder i tid fra din egen.</translation>
+        <translation>Genererte nekos må modnes %1 blokker før de kan brukes. Da du genererte denne blokken ble den kringkastet på nettverket for å bli lagt til i kjeden av blokker. Hvis den ikke kommer med i kjeden vil den endre seg til "ikke akseptert" og pengene vil ikke kunne brukes. Dette vil noen ganger skje hvis en annen node genererer en blokk noen sekunder i tid fra din egen.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -2742,7 +2742,7 @@ Adresse: %4
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Send Emercoins</translation>
+        <translation>Send Nekos</translation>
     </message>
 </context>
 <context>
@@ -2847,8 +2847,8 @@ Adresse: %4
         <translation>Dette er en forhåndssluppet testversjon - bruk på egen risiko - ikke for bruk til blokkutvinning eller bedriftsapplikasjoner</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Emercoin Core is probably already running.</source>
-        <translation>Ute av stand til å binde til %s på denne datamaskinen. Emercoin Core kjører sannsynligvis allerede.</translation>
+        <source>Unable to bind to %s on this computer. Neko Core is probably already running.</source>
+        <translation>Ute av stand til å binde til %s på denne datamaskinen. Neko Core kjører sannsynligvis allerede.</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
@@ -3031,8 +3031,8 @@ Adresse: %4
         <translation>Bind til gitt adresse for å lytte for JSON-RPC-tilkoblinger. Bruk [host]:port notasjon for IPv6. Dette alternativet kan angis flere ganger (standardverdi: bind til alle grensesnitt)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Emercoin Core is probably already running.</source>
-        <translation>Ute av stand til å låse datamappen %s. Emercoin Core kjører sannsynligvis allerede.</translation>
+        <source>Cannot obtain a lock on data directory %s. Neko Core is probably already running.</source>
+        <translation>Ute av stand til å låse datamappen %s. Neko Core kjører sannsynligvis allerede.</translation>
     </message>
     <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
@@ -3055,12 +3055,12 @@ Adresse: %4
         <translation>Utfør kommando når et relevant varsel er mottatt eller vi ser en veldig lang gaffel (%s i kommando er erstattet med melding)</translation>
     </message>
     <message>
-        <source>Fees (in EMC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebyrer (i EMC/Kb) mindre enn dette anses som null gebyr for videresending (standardverdi: %s)</translation>
+        <source>Fees (in NK/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebyrer (i NK/Kb) mindre enn dette anses som null gebyr for videresending (standardverdi: %s)</translation>
     </message>
     <message>
-        <source>Fees (in EMC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebyrer (i EMC/Kb) mindre enn dette anses som null gebyr for laging av transaksjoner (standardverdi: %s)</translation>
+        <source>Fees (in NK/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebyrer (i NK/Kb) mindre enn dette anses som null gebyr for laging av transaksjoner (standardverdi: %s)</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
@@ -3099,27 +3099,27 @@ Adresse: %4
         <translation>Dette produktet inneholder programvare utviklet av OpenSSL Project for bruk i OpenSSL Toolkit &lt;https://www.openssl.org/&gt; og kryptografisk programvare skrevet av Eric Young og UPnP-programvare skrevet av Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use emercoind, or the -server option to emercoin-qt, you must set an rpcpassword in the configuration file:
+        <source>To use nekod, or the -server option to neko-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=emercoinrpc
+rpcuser=nekorpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Emercoin Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "Neko Alert" admin@foo.com
 </source>
-        <translation>For å bruke emercoind, eller -server valget til emercoin-qt, må du angi et rpcpassord i konfigurasjonsfilen:
+        <translation>For å bruke nekod, eller -server valget til neko-qt, må du angi et rpcpassord i konfigurasjonsfilen:
 %s
 Det anbefales at du bruker det følgende tilfeldige passordet:
-rpcuser=emercoinrpc
+rpcuser=nekorpc
 rpcpassword=%s
 (du behøver ikke å huske passordet)
 Brukernavnet og passordet MÅ IKKE være like.
 Om filen ikke eksisterer, opprett den med eier-kun-les filrettigheter.
 Det er også anbefalt at å sette varselsmelding slik du får melding om problemer;
-for eksempel: alertnotify=echo %%s | mail -s "Emercoin Alert" admin@foo.com
+for eksempel: alertnotify=echo %%s | mail -s "Neko Alert" admin@foo.com
 </translation>
     </message>
     <message>
@@ -3127,8 +3127,8 @@ for eksempel: alertnotify=echo %%s | mail -s "Emercoin Alert" admin@foo.com
         <translation>Advarsel: -paytxfee er satt veldig høyt! Så stort gebyr kan bli betalt ved en enkelt transaksjon.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Emercoin Core will not work properly.</source>
-        <translation>Advarsel: Vennligst undersøk at din datamaskin har riktig dato og klokkeslett! Hvis klokken er stilt feil vil ikke Emercoin Core fungere riktig.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Neko Core will not work properly.</source>
+        <translation>Advarsel: Vennligst undersøk at din datamaskin har riktig dato og klokkeslett! Hvis klokken er stilt feil vil ikke Neko Core fungere riktig.</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
@@ -3155,8 +3155,8 @@ for eksempel: alertnotify=echo %%s | mail -s "Emercoin Alert" admin@foo.com
         <translation>Kunne ikke tolke -rpcbind-verdi %s som en nettverksadresse</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Emercoin Core</source>
-        <translation>Feil ved lasting av wallet.dat: Lommeboken krever en nyere versjon av Emercoin Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Neko Core</source>
+        <translation>Feil ved lasting av wallet.dat: Lommeboken krever en nyere versjon av Neko Core</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -3171,16 +3171,16 @@ for eksempel: alertnotify=echo %%s | mail -s "Emercoin Alert" admin@foo.com
         <translation>Feil: Argumentet -tor er ikke støttet, bruk -onion.</translation>
     </message>
     <message>
-        <source>Fee (in EMC/Kb) to add to transactions you send (default: %s)</source>
-        <translation>Gebyr (i EMC/Kb) for å legge til i transaksjoner du sender (standardverdi: %s)</translation>
+        <source>Fee (in NK/Kb) to add to transactions you send (default: %s)</source>
+        <translation>Gebyr (i NK/Kb) for å legge til i transaksjoner du sender (standardverdi: %s)</translation>
     </message>
     <message>
         <source>Information</source>
         <translation>Informasjon</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Emercoin Core is shutting down.</source>
-        <translation>Sunnhetssjekk ved oppstart feilet. Emercoin Core stenges ned.</translation>
+        <source>Initialization sanity check failed. Neko Core is shutting down.</source>
+        <translation>Sunnhetssjekk ved oppstart feilet. Neko Core stenges ned.</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
@@ -3291,8 +3291,8 @@ for eksempel: alertnotify=echo %%s | mail -s "Emercoin Alert" admin@foo.com
         <translation>Brukernavn for JSON-RPC forbindelser</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Emercoin Core to complete</source>
-        <translation>Lommeboken måtte skrives på nytt: start Emercoin Core på nytt for å fullføre</translation>
+        <source>Wallet needed to be rewritten: restart Neko Core to complete</source>
+        <translation>Lommeboken måtte skrives på nytt: start Neko Core på nytt for å fullføre</translation>
     </message>
     <message>
         <source>Warning</source>

@@ -1,5 +1,5 @@
 /*
- * Simple DNS server for EmerCoin project
+ * Simple DNS server for Neko project
  *
  * Lookup for names like "dns:some-nake" in the local nameindex database.
  * Database is updates from blockchain, and keeps NMC-transactions.
@@ -37,7 +37,7 @@
 
 #include "namecoin.h"
 #include "util.h"
-#include "emcdns.h"
+#include "nkdns.h"
 #include "hooks.h"
 
 /*---------------------------------------------------*/
@@ -99,7 +99,7 @@ char *strsep(char **s, const char *ct)
 
 /*---------------------------------------------------*/
 
-EmcDns::EmcDns(const char *bind_ip, uint16_t port_no,
+NkDns::NkDns(const char *bind_ip, uint16_t port_no,
 	  const char *gw_suffix, const char *allowed_suff, const char *local_fname, const char *enums, const char *tollfree, uint8_t verbose) 
     : m_status(-1), m_thread(StatRun, this) {
 
@@ -110,7 +110,7 @@ EmcDns::EmcDns(const char *bind_ip, uint16_t port_no,
     // Create and socket
     int ret = socket(PF_INET, SOCK_DGRAM, 0);
     if(ret < 0) {
-      throw runtime_error("EmcDns::EmcDns: Cannot create socket");
+      throw runtime_error("NkDns::NkDns: Cannot create socket");
     } else {
       m_sockfd = ret;
     }
@@ -124,7 +124,7 @@ EmcDns::EmcDns(const char *bind_ip, uint16_t port_no,
     if(bind(m_sockfd, (struct sockaddr *) &m_address,
                      sizeof (struct sockaddr_in)) < 0) {
       char buf[80];
-      sprintf(buf, "EmcDns::EmcDns: Cannot bind to port %u", port_no);
+      sprintf(buf, "NkDns::NkDns: Cannot bind to port %u", port_no);
       throw runtime_error(buf);
     }
 
@@ -163,14 +163,14 @@ EmcDns::EmcDns(const char *bind_ip, uint16_t port_no,
 
     // Activate DAP only on the public gateways, with some suffixes, like .emergate.net
     // If no memory, DAP inactive - this is not critical problem
-    m_dap_ht  = (allowed_len && m_gw_suf_len)? (DNSAP*)calloc(EMCDNS_DAPSIZE, sizeof(DNSAP)) : NULL; 
+    m_dap_ht  = (allowed_len && m_gw_suf_len)? (DNSAP*)calloc(NKDNS_DAPSIZE, sizeof(DNSAP)) : NULL; 
     m_daprand = GetRand(0xffffffff) | 1; 
 
     m_value  = (char *)malloc(VAL_SIZE + BUF_SIZE + 2 + 
 	    m_gw_suf_len + allowed_len + local_len + 4);
  
     if(m_value == NULL) 
-      throw runtime_error("EmcDns::EmcDns: Cannot allocate buffer");
+      throw runtime_error("NkDns::NkDns: Cannot allocate buffer");
 
     // Temporary use m_value for parse enum-verifiers and toll-free lists, if exist
 
@@ -180,7 +180,7 @@ EmcDns::EmcDns(const char *bind_ip, uint16_t port_no,
       while(char *p_tok = strsep(&str, "|,"))
         if(*p_tok) {
 	  if(m_verbose > 5)
-	  LogPrintf("\tEmcDns::EmcDns: enumtrust=%s\n", p_tok);
+	  LogPrintf("\tNkDns::NkDns: enumtrust=%s\n", p_tok);
           m_verifiers[string(p_tok)] = empty_ver;
 	}
     } // ENUMs completed 
@@ -222,7 +222,7 @@ EmcDns::EmcDns(const char *bind_ip, uint16_t port_no,
 	    }
 	    m_allowed_qty++;
 	    if(m_verbose > 3)
-	      LogPrintf("\tEmcDns::EmcDns: Insert %s TLD=%s:%u\n", dnstype, p + 1, *p);
+	      LogPrintf("\tNkDns::NkDns: Insert %s TLD=%s:%u\n", dnstype, p + 1, *p);
 	  }
 	  pos = step = 0;
 	  continue;
@@ -248,7 +248,7 @@ EmcDns::EmcDns(const char *bind_ip, uint16_t port_no,
         } // while
 	step |= 1;
 	if(m_verbose > 3)
-	  LogPrintf("\tEmcDns::EmcDns: Insert Local:[%s]->[%s] pos=%u step=%u\n", p, p_eq, pos, step);
+	  LogPrintf("\tNkDns::NkDns: Insert Local:[%s]->[%s] pos=%u step=%u\n", p, p_eq, pos, step);
 	do 
 	  pos += step;
         while(m_ht_offset[pos] != 0);
@@ -258,7 +258,7 @@ EmcDns::EmcDns(const char *bind_ip, uint16_t port_no,
     } //  if(local_len)
 
     if(m_verbose > 0)
-	 LogPrintf("EmcDns::EmcDns: Created/Attached: %s:%u; Qty=%u:%u\n", 
+	 LogPrintf("NkDns::NkDns: Created/Attached: %s:%u; Qty=%u:%u\n", 
 		 m_address.sin_addr.s_addr == INADDR_ANY? "INADDR_ANY" : bind_ip, 
 		 port_no, m_allowed_qty, local_qty);
 
@@ -266,15 +266,15 @@ EmcDns::EmcDns(const char *bind_ip, uint16_t port_no,
 
     if(tollfree && *tollfree) {
       if(m_verbose > 3)
-	LogPrintf("\tEmcDns::EmcDns: Setup deferred toll-free=%s\n", tollfree);
+	LogPrintf("\tNkDns::NkDns: Setup deferred toll-free=%s\n", tollfree);
       strcpy(m_value, tollfree);
     } else
       m_value[0] = 0;
 
     m_status = 1; // Active, and maybe download
-} // EmcDns::EmcDns
+} // NkDns::NkDns
 /*---------------------------------------------------*/
-void EmcDns::AddTF(char *tf_tok) {
+void NkDns::AddTF(char *tf_tok) {
   // Skip comments and empty lines
   if(tf_tok[0] < '0')
     return;
@@ -295,12 +295,12 @@ void EmcDns::AddTF(char *tf_tok) {
         m_tollfree.back().e2u.push_back(string(tf_tok));
 
   if(m_verbose > 3)
-    LogPrintf("\tEmcDns::AddTF: Added token [%s] %u:%u\n", tf_tok, m_tollfree.size(), m_tollfree.back().e2u.size()); 
-} // EmcDns::AddTF
+    LogPrintf("\tNkDns::AddTF: Added token [%s] %u:%u\n", tf_tok, m_tollfree.size(), m_tollfree.back().e2u.size()); 
+} // NkDns::AddTF
 
 /*---------------------------------------------------*/
 
-EmcDns::~EmcDns() {
+NkDns::~NkDns() {
     // reset current object to initial state
 #ifndef WIN32
     shutdown(m_sockfd, SHUT_RDWR);
@@ -311,21 +311,21 @@ EmcDns::~EmcDns() {
     free(m_value);
     free(m_dap_ht);
     if(m_verbose > 0)
-	 LogPrintf("EmcDns::~EmcDns: Destroyed OK\n");
-} // EmcDns::~EmcDns
+	 LogPrintf("NkDns::~NkDns: Destroyed OK\n");
+} // NkDns::~NkDns
 
 
 /*---------------------------------------------------*/
 
-void EmcDns::StatRun(void *p) {
-  EmcDns *obj = (EmcDns*)p;
+void NkDns::StatRun(void *p) {
+  NkDns *obj = (NkDns*)p;
   obj->Run();
-//emercoin  ExitThread(0);
-} // EmcDns::StatRun
+//neko  ExitThread(0);
+} // NkDns::StatRun
 
 /*---------------------------------------------------*/
-void EmcDns::Run() {
-  if(m_verbose > 2) LogPrintf("EmcDns::Run: started\n");
+void NkDns::Run() {
+  if(m_verbose > 2) LogPrintf("NkDns::Run: started\n");
 
   while(m_status < 0) // not initied yet
     MilliSleep(133);
@@ -351,14 +351,14 @@ void EmcDns::Run() {
     } // dap check
   } // for
 
-  if(m_verbose > 2) LogPrintf("EmcDns::Run: Received Exit packet_len=%d\n", m_rcvlen);
+  if(m_verbose > 2) LogPrintf("NkDns::Run: Received Exit packet_len=%d\n", m_rcvlen);
 
-} //  EmcDns::Run
+} //  NkDns::Run
 
 /*---------------------------------------------------*/
 
-void EmcDns::HandlePacket() {
-  if(m_verbose > 2) LogPrintf("EmcDns::HandlePacket: Handle packet_len=%d\n", m_rcvlen);
+void NkDns::HandlePacket() {
+  if(m_verbose > 2) LogPrintf("NkDns::HandlePacket: Handle packet_len=%d\n", m_rcvlen);
 
   m_hdr = (DNSHeader *)m_buf;
   // Decode input header from network format
@@ -368,12 +368,12 @@ void EmcDns::HandlePacket() {
   m_rcvend = m_snd = m_buf + m_rcvlen;
 
   if(m_verbose > 3) {
-    LogPrintf("\tEmcDns::HandlePacket: msgID  : %d\n", m_hdr->msgID);
-    LogPrintf("\tEmcDns::HandlePacket: Bits   : %04x\n", m_hdr->Bits);
-    LogPrintf("\tEmcDns::HandlePacket: QDCount: %d\n", m_hdr->QDCount);
-    LogPrintf("\tEmcDns::HandlePacket: ANCount: %d\n", m_hdr->ANCount);
-    LogPrintf("\tEmcDns::HandlePacket: NSCount: %d\n", m_hdr->NSCount);
-    LogPrintf("\tEmcDns::HandlePacket: ARCount: %d\n", m_hdr->ARCount);
+    LogPrintf("\tNkDns::HandlePacket: msgID  : %d\n", m_hdr->msgID);
+    LogPrintf("\tNkDns::HandlePacket: Bits   : %04x\n", m_hdr->Bits);
+    LogPrintf("\tNkDns::HandlePacket: QDCount: %d\n", m_hdr->QDCount);
+    LogPrintf("\tNkDns::HandlePacket: ANCount: %d\n", m_hdr->ANCount);
+    LogPrintf("\tNkDns::HandlePacket: NSCount: %d\n", m_hdr->NSCount);
+    LogPrintf("\tNkDns::HandlePacket: ARCount: %d\n", m_hdr->ARCount);
   }
   // Assert following 3 counters and bits are zero
 //*  uint16_t zCount = m_hdr->ANCount | m_hdr->NSCount | m_hdr->ARCount | (m_hdr->Bits & (m_hdr->QR_MASK | m_hdr->TC_MASK));
@@ -408,7 +408,7 @@ void EmcDns::HandlePacket() {
         // Iterate the list of Toll-Free fnames; can be fnames and NVS records
         while(char *tf_fname = strsep(&tf_str, "|")) {
           if(m_verbose > 3)
-	    LogPrintf("\tEmcDns::HandlePacket: handle deferred toll-free=%s\n", tf_fname);
+	    LogPrintf("\tNkDns::HandlePacket: handle deferred toll-free=%s\n", tf_fname);
           if(tf_fname[0] == '@') { // this is NVS record
             string value;
             if(hooks->getNameValue(string(tf_fname + 1), value)) {
@@ -431,7 +431,7 @@ void EmcDns::HandlePacket() {
     // Handle questions here
     for(uint16_t qno = 0; qno < m_hdr->QDCount && m_snd < m_bufend; qno++) {
       if(m_verbose > 5) 
-        LogPrintf("\tEmcDns::HandlePacket: qno=%u m_hdr->QDCount=%u\n", qno, m_hdr->QDCount);
+        LogPrintf("\tNkDns::HandlePacket: qno=%u m_hdr->QDCount=%u\n", qno, m_hdr->QDCount);
       uint16_t rc = HandleQuery();
       if(rc) {
 	m_hdr->Bits |= rc;
@@ -459,10 +459,10 @@ void EmcDns::HandlePacket() {
   }
   // Encode output header into network format
   m_hdr->Transcode();
-} // EmcDns::HandlePacket
+} // NkDns::HandlePacket
 
 /*---------------------------------------------------*/
-uint16_t EmcDns::HandleQuery() {
+uint16_t NkDns::HandleQuery() {
   // Decode qname
   uint8_t key[BUF_SIZE];				// Key, transformed to dot-separated LC
   uint8_t *key_end = key;
@@ -490,19 +490,19 @@ uint16_t EmcDns::HandleQuery() {
   *--key_end = 0; // Remove last dot, set EOLN
 
   if(m_verbose > 3) 
-    LogPrintf("EmcDns::HandleQuery: Translated domain name: [%s]; DomainsQty=%d\n", key, (int)(domain_ndx_p - domain_ndx));
+    LogPrintf("NkDns::HandleQuery: Translated domain name: [%s]; DomainsQty=%d\n", key, (int)(domain_ndx_p - domain_ndx));
 
   uint16_t qtype  = *m_rcv++; qtype  = (qtype  << 8) + *m_rcv++; 
   uint16_t qclass = *m_rcv++; qclass = (qclass << 8) + *m_rcv++;
 
   if(m_verbose > 0) 
-    LogPrintf("EmcDns::HandleQuery: Key=%s QType=%x QClass=%x\n", key, qtype, qclass);
+    LogPrintf("NkDns::HandleQuery: Key=%s QType=%x QClass=%x\n", key, qtype, qclass);
 
   if(qclass != 1)
     return 4; // Not implemented - support INET only
 
   // If thid is public gateway, gw-suffix can be specified, like 
-  // emcdnssuffix=.xyz.com
+  // nkdnssuffix=.xyz.com
   // Followind block cuts this suffix, if exists.
   // If received domain name "xyz.com" only, keyp is empty string
 
@@ -530,7 +530,7 @@ uint16_t EmcDns::HandleQuery() {
   uint8_t *p = key_end;
 
   if(m_verbose > 3) 
-    LogPrintf("EmcDns::HandleQuery: After TLD-suffix cut: [%s]\n", key);
+    LogPrintf("NkDns::HandleQuery: After TLD-suffix cut: [%s]\n", key);
 
   while(p > key) {
     uint8_t c = *--p;
@@ -554,7 +554,7 @@ uint16_t EmcDns::HandleQuery() {
     if(m_allowed_qty) { // Activated TLD-filter
       if(*p != '.') {
         if(m_verbose > 3) 
-      LogPrintf("EmcDns::HandleQuery: TLD-suffix=[.%s] is not specified in given key=%s; return NXDOMAIN\n", p, key);
+      LogPrintf("NkDns::HandleQuery: TLD-suffix=[.%s] is not specified in given key=%s; return NXDOMAIN\n", p, key);
 	return 3; // TLD-suffix is not specified, so NXDOMAIN
       } 
       p++; // Set PTR after dot, to the suffix
@@ -562,7 +562,7 @@ uint16_t EmcDns::HandleQuery() {
         pos += step;
         if(m_ht_offset[pos] == 0) {
           if(m_verbose > 3) 
-  	    LogPrintf("EmcDns::HandleQuery: TLD-suffix=[.%s] in given key=%s is not allowed; return NXDOMAIN\n", p, key);
+  	    LogPrintf("NkDns::HandleQuery: TLD-suffix=[.%s] in given key=%s is not allowed; return NXDOMAIN\n", p, key);
 	  return 3; // Reached EndOfList, so NXDOMAIN
         } 
       } while(m_ht_offset[pos] < 0 || strcmp((const char *)p, m_allowed_base + (m_ht_offset[pos] & ~ENUM_FLAG)) != 0);
@@ -630,10 +630,10 @@ uint16_t EmcDns::HandleQuery() {
   } else 
       Answer_ALL(qtype, m_value);
   return 0;
-} // EmcDns::HandleQuery
+} // NkDns::HandleQuery
 
 /*---------------------------------------------------*/
-int EmcDns::TryMakeref(uint16_t label_ref) {
+int NkDns::TryMakeref(uint16_t label_ref) {
   char val2[VAL_SIZE];
   char *tokens[MAX_TOK];
   int ttlqty = Tokenize("TTL", NULL, tokens, strcpy(val2, m_value));
@@ -644,12 +644,12 @@ int EmcDns::TryMakeref(uint16_t label_ref) {
   m_label_ref = orig_label_ref;
   m_hdr->NSCount = m_hdr->ANCount;
   m_hdr->ANCount = 0;
-  LogPrintf("EmcDns::TryMakeref: Generated REF NS=%u\n", m_hdr->NSCount);
+  LogPrintf("NkDns::TryMakeref: Generated REF NS=%u\n", m_hdr->NSCount);
   return m_hdr->NSCount;
-} //  EmcDns::TryMakeref
+} //  NkDns::TryMakeref
 /*---------------------------------------------------*/
 
-int EmcDns::Tokenize(const char *key, const char *sep2, char **tokens, char *buf) {
+int NkDns::Tokenize(const char *key, const char *sep2, char **tokens, char *buf) {
   int tokensN = 0;
 
   // Figure out main separator. If not defined, use |
@@ -699,11 +699,11 @@ int EmcDns::Tokenize(const char *key, const char *sep2, char **tokens, char *buf
       break;
   } // for - big tokens (MX, A, AAAA, etc)
   return tokensN;
-} // EmcDns::Tokenize
+} // NkDns::Tokenize
 
 /*---------------------------------------------------*/
 
-void EmcDns::Answer_ALL(uint16_t qtype, char *buf) {
+void NkDns::Answer_ALL(uint16_t qtype, char *buf) {
   const char *key;
   switch(qtype) {
       case  1 : key = "A";      break;
@@ -719,7 +719,7 @@ void EmcDns::Answer_ALL(uint16_t qtype, char *buf) {
   char *tokens[MAX_TOK];
   int tokQty = Tokenize(key, ",", tokens, buf);
 
-  if(m_verbose > 0) LogPrintf("EmcDns::Answer_ALL(QT=%d, key=%s); TokenQty=%d\n", qtype, key, tokQty);
+  if(m_verbose > 0) LogPrintf("NkDns::Answer_ALL(QT=%d, key=%s); TokenQty=%d\n", qtype, key, tokQty);
 
   // Shuffle tokens for randomization output order
   for(int i = tokQty; i > 1; ) {
@@ -732,7 +732,7 @@ void EmcDns::Answer_ALL(uint16_t qtype, char *buf) {
 
   for(int tok_no = 0; tok_no < tokQty; tok_no++) {
       if(m_verbose > 1) 
-	LogPrintf("\tEmcDns::Answer_ALL: Token:%u=[%s]\n", tok_no, tokens[tok_no]);
+	LogPrintf("\tNkDns::Answer_ALL: Token:%u=[%s]\n", tok_no, tokens[tok_no]);
       Out2(m_label_ref);
       Out2(qtype); // A record, or maybe something else
       Out2(1); //  INET
@@ -749,11 +749,11 @@ void EmcDns::Answer_ALL(uint16_t qtype, char *buf) {
       } // swithc
   } // for
   m_hdr->ANCount += tokQty;
-} // EmcDns::Answer_ALL 
+} // NkDns::Answer_ALL 
 
 /*---------------------------------------------------*/
 
-void EmcDns::Fill_RD_IP(char *ipddrtxt, int af) {
+void NkDns::Fill_RD_IP(char *ipddrtxt, int af) {
   uint16_t out_sz;
   switch(af) {
       case AF_INET : out_sz = 4;  break;
@@ -765,11 +765,11 @@ void EmcDns::Fill_RD_IP(char *ipddrtxt, int af) {
     m_snd += out_sz;
   else
     m_snd -= 12, m_hdr->ANCount--; // 12 = clear this 2 and 10 bytes at caller
-} // EmcDns::Fill_RD_IP
+} // NkDns::Fill_RD_IP
 
 /*---------------------------------------------------*/
 
-void EmcDns::Fill_RD_DName(char *txt, uint8_t mxsz, int8_t txtcor) {
+void NkDns::Fill_RD_DName(char *txt, uint8_t mxsz, int8_t txtcor) {
   uint8_t *snd0 = m_snd;
   m_snd += 3 + mxsz; // skip SZ and sz0
   uint8_t *tok_sz = m_snd - 1;
@@ -805,14 +805,14 @@ void EmcDns::Fill_RD_DName(char *txt, uint8_t mxsz, int8_t txtcor) {
     *snd0++ = mx_pri >> 8;
     *snd0++ = mx_pri;
   }
-} // EmcDns::Fill_RD_DName
+} // NkDns::Fill_RD_DName
 
 /*---------------------------------------------------*/
 /*---------------------------------------------------*/
 
-int EmcDns::Search(uint8_t *key) {
+int NkDns::Search(uint8_t *key) {
   if(m_verbose > 1) 
-    LogPrintf("EmcDns::Search(%s)\n", key);
+    LogPrintf("NkDns::Search(%s)\n", key);
 
   string value;
   if (!hooks->getNameValue(string("dns:") + (const char *)key, value))
@@ -820,18 +820,18 @@ int EmcDns::Search(uint8_t *key) {
 
   strcpy(m_value, value.c_str());
   return 1;
-} //  EmcDns::Search
+} //  NkDns::Search
 
 /*---------------------------------------------------*/
 
-int EmcDns::LocalSearch(const uint8_t *key, uint8_t pos, uint8_t step) {
+int NkDns::LocalSearch(const uint8_t *key, uint8_t pos, uint8_t step) {
   if(m_verbose > 1) 
-    LogPrintf("EmcDns::LocalSearch(%s, %u, %u) called\n", key, pos, step);
+    LogPrintf("NkDns::LocalSearch(%s, %u, %u) called\n", key, pos, step);
     do {
       pos += step;
       if(m_ht_offset[pos] == 0) {
         if(m_verbose > 3) 
-  	  LogPrintf("EmcDns::LocalSearch: Local key=[%s] not found; go to nameindex search\n", key);
+  	  LogPrintf("NkDns::LocalSearch: Local key=[%s] not found; go to nameindex search\n", key);
          return 0; // Reached EndOfList 
       } 
     } while(m_ht_offset[pos] > 0 || strcmp((const char *)key, m_local_base - m_ht_offset[pos]) != 0);
@@ -839,33 +839,33 @@ int EmcDns::LocalSearch(const uint8_t *key, uint8_t pos, uint8_t step) {
   strcpy(m_value, strchr(m_local_base - m_ht_offset[pos], 0) + 1);
 
   return 1;
-} // EmcDns::LocalSearch
+} // NkDns::LocalSearch
 
 
 /*---------------------------------------------------*/
 // Returns x>0 = hash index to update size; x<0 = disable;
-DNSAP *EmcDns::CheckDAP(uint32_t ip_addr) { 
+DNSAP *NkDns::CheckDAP(uint32_t ip_addr) { 
   uint32_t hash = ip_addr * m_daprand;
   hash ^= hash >> 16;
   hash += hash >> 8;
-  DNSAP *dap = m_dap_ht + (hash & (EMCDNS_DAPSIZE - 1));
+  DNSAP *dap = m_dap_ht + (hash & (NKDNS_DAPSIZE - 1));
   uint16_t timestamp = time(NULL) >> 6; // time in 64s ticks
   uint16_t dt = timestamp - dap->timestamp;
   dap->ed_size = (dt > 15? 0 : dap->ed_size >> dt) + 1;
   dap->timestamp = timestamp;
-  return (dap->ed_size <= EMCDNS_DAPTRESHOLD)? dap : NULL;
-} // EmcDns::CheckDAP 
+  return (dap->ed_size <= NKDNS_DAPTRESHOLD)? dap : NULL;
+} // NkDns::CheckDAP 
 
 
 /*---------------------------------------------------*/
 // Handle Special function - phone number in the E.164 format
 // to support ENUM service
-int EmcDns::SpfunENUM(uint8_t len, uint8_t **domain_start, uint8_t **domain_end) {
+int NkDns::SpfunENUM(uint8_t len, uint8_t **domain_start, uint8_t **domain_end) {
   int dom_length = domain_end - domain_start;
   const char *tld = (const char*)domain_end[-1];
 
   if(m_verbose > 3)
-    LogPrintf("\tEmcDns::SpfunENUM: Domain=[%s] N=%u TLD=[%s] Len=%u\n", 
+    LogPrintf("\tNkDns::SpfunENUM: Domain=[%s] N=%u TLD=[%s] Len=%u\n", 
 	    (const char*)*domain_start, dom_length, tld, len);
 
   do {
@@ -889,7 +889,7 @@ int EmcDns::SpfunENUM(uint8_t len, uint8_t **domain_start, uint8_t **domain_end)
       break; // Empty phone number - NXDOMAIN
 
     if(m_verbose > 3)
-      LogPrintf("\tEmcDns::SpfunENUM: ITU-T num=[%s]\n", itut_num);
+      LogPrintf("\tNkDns::SpfunENUM: ITU-T num=[%s]\n", itut_num);
 
     // Itrrate all available ENUM-records, and build joined answer from them
     if(!m_verifiers.empty())
@@ -897,7 +897,7 @@ int EmcDns::SpfunENUM(uint8_t len, uint8_t **domain_start, uint8_t **domain_end)
         char q_str[100];
         sprintf(q_str, "%s:%s:%u", tld, itut_num, qno); 
         if(m_verbose > 1) 
-          LogPrintf("\tEmcDns::SpfunENUM Search(%s)\n", q_str);
+          LogPrintf("\tNkDns::SpfunENUM Search(%s)\n", q_str);
 
         string value;
         if(!hooks->getNameValue(string(q_str), value))
@@ -916,7 +916,7 @@ int EmcDns::SpfunENUM(uint8_t len, uint8_t **domain_start, uint8_t **domain_end)
 	bool matched = regex_match(string(itut_num), nameparts, tf->regex);
 	// bool matched = regex_search(string(itut_num), nameparts, tf->regex);
         if(m_verbose > 3) 
-          LogPrintf("\tEmcDns::SpfunENUM TF-match N=[%s] RE=[%s] -> %u\n", itut_num, tf->regex_str.c_str(), matched);
+          LogPrintf("\tNkDns::SpfunENUM TF-match N=[%s] RE=[%s] -> %u\n", itut_num, tf->regex_str.c_str(), matched);
         if(matched)
 	  for(vector<string>::const_iterator e2u = tf->e2u.begin(); e2u != tf->e2u.end(); e2u++)
 	      HandleE2U(strcpy(m_value, e2u->c_str()));
@@ -928,7 +928,7 @@ int EmcDns::SpfunENUM(uint8_t len, uint8_t **domain_start, uint8_t **domain_end)
   } while(false);
 
   return 3; // NXDOMAIN
-} // EmcDns::SpfunENUM
+} // NkDns::SpfunENUM
 
 /*---------------------------------------------------*/
 
@@ -936,7 +936,7 @@ int EmcDns::SpfunENUM(uint8_t len, uint8_t **domain_start, uint8_t **domain_end)
 
 /*---------------------------------------------------*/
 // Generate answewr for found EMUM NVS record
-void EmcDns::Answer_ENUM(const char *q_str) {
+void NkDns::Answer_ENUM(const char *q_str) {
   char *str_val = m_value;
   const char *pttl;
   char *e2u[VAL_SIZE / 4]; // 20kb max input, and min 4 bytes per token
@@ -976,19 +976,19 @@ void EmcDns::Answer_ENUM(const char *q_str) {
     if(m_snd < m_bufend - 24)
       HandleE2U(e2u[e2undx]);
 
- } // EmcDns::Answer_ENUM
+ } // NkDns::Answer_ENUM
 
 /*---------------------------------------------------*/
-void EmcDns::OutS(const char *p) {
+void NkDns::OutS(const char *p) {
   int len = strlen(strcpy((char *)m_snd + 1, p));
   *m_snd = len;
   m_snd += len + 1; 
-} // EmcDns::OutS
+} // NkDns::OutS
 
 /*---------------------------------------------------*/
  // Generate ENUM-answers for a single E2U entry
  // E2U+sip=100|10|!^(.*)$!sip:17771234567@in.callcentric.com!
-void EmcDns::HandleE2U(char *e2u) {
+void NkDns::HandleE2U(char *e2u) {
   char *data = strchr(e2u, '='), *p = data;
   if(data == NULL) 
     return;
@@ -1005,7 +1005,7 @@ void EmcDns::HandleE2U(char *e2u) {
     return;
 
     if(m_verbose > 3)
-      LogPrintf("\tEmcDns::HandleE2U: Parsed: %u %u %s %s\n", ord, pref, e2u, re);
+      LogPrintf("\tNkDns::HandleE2U: Parsed: %u %u %s %s\n", ord, pref, e2u, re);
 
   if(m_snd + strlen(re) + strlen(e2u) + 24 >= m_bufend)
     return;
@@ -1027,10 +1027,10 @@ void EmcDns::HandleE2U(char *e2u) {
   *snd0++ = len;
 
   m_hdr->ANCount++;
-} //  EmcDns::HandleE2U
+} //  NkDns::HandleE2U
 
 /*---------------------------------------------------*/
-bool EmcDns::CheckEnumSig(const char *q_str, char *sig_str) {
+bool NkDns::CheckEnumSig(const char *q_str, char *sig_str) {
     if(sig_str == NULL)
       return false;
 
@@ -1165,5 +1165,5 @@ bool EmcDns::CheckEnumSig(const char *q_str, char *sig_str) {
 
     return true;
 #endif
-} // EmcDns::CheckEnumSig
+} // NkDns::CheckEnumSig
 

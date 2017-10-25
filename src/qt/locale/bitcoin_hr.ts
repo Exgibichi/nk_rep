@@ -66,12 +66,12 @@
         <translation>Adresa za primanje</translation>
     </message>
     <message>
-        <source>These are your Emercoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ovo su vaše Emercoin adrese za slanje uplate. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
+        <source>These are your Neko addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ovo su vaše Neko adrese za slanje uplate. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
     </message>
     <message>
-        <source>These are your Emercoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Ovo su vaše Emercoin adrese za primanje isplate. Preporučamo da koristite novu primateljsku adresu za svaku transakciju.</translation>
+        <source>These are your Neko addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Ovo su vaše Neko adrese za primanje isplate. Preporučamo da koristite novu primateljsku adresu za svaku transakciju.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -164,8 +164,8 @@
         <translation>Potvrdi šifriranje novčanika</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR EMERCOINS&lt;/b&gt;!</source>
-        <translation>Upozorenje: Ako šifrirate vaš novčanik i izgubite lozinku, &lt;b&gt;IZGUBIT ĆETE SVE SVOJE EMERCOINSE!&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NEKOS&lt;/b&gt;!</source>
+        <translation>Upozorenje: Ako šifrirate vaš novčanik i izgubite lozinku, &lt;b&gt;IZGUBIT ĆETE SVE SVOJE NEKOSE!&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -188,8 +188,8 @@
         <translation>Unesite novu lozinku za novčanik. &lt;br/&gt;Molimo Vas da koristite zaporku od &lt;b&gt;deset ili više slučajnih znakova&lt;/b&gt;, ili &lt;b&gt;osam ili više riječi.&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>Emercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your emercoins from being stolen by malware infecting your computer.</source>
-        <translation>Emercoin će se sada zatvoriti kako bi dovršio postupak šifriranja. Zapamtite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše emercoine od krađe preko zloćudnog softvera koji bi bio na vašem računalu.</translation>
+        <source>Neko will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your nekos from being stolen by malware infecting your computer.</source>
+        <translation>Neko će se sada zatvoriti kako bi dovršio postupak šifriranja. Zapamtite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše nekoe od krađe preko zloćudnog softvera koji bi bio na vašem računalu.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -295,8 +295,8 @@
         <translation>Otvori &amp;URI...</translation>
     </message>
     <message>
-        <source>Emercoin Core client</source>
-        <translation>Emercoin Core klijent</translation>
+        <source>Neko Core client</source>
+        <translation>Neko Core klijent</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -307,12 +307,12 @@
         <translation>Re-indeksiranje blokova na disku...</translation>
     </message>
     <message>
-        <source>Send coins to an Emercoin address</source>
-        <translation>Slanje novca na emercoin adresu</translation>
+        <source>Send coins to an Neko address</source>
+        <translation>Slanje novca na neko adresu</translation>
     </message>
     <message>
-        <source>Modify configuration options for Emercoin</source>
-        <translation>Promijeni postavke konfiguracije za emercoin</translation>
+        <source>Modify configuration options for Neko</source>
+        <translation>Promijeni postavke konfiguracije za neko</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -335,8 +335,8 @@
         <translation>&amp;Potvrdite poruku...</translation>
     </message>
     <message>
-        <source>Emercoin</source>
-        <translation>Emercoin</translation>
+        <source>Neko</source>
+        <translation>Neko</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -351,8 +351,8 @@
         <translation>Pri&amp;miti</translation>
     </message>
     <message>
-        <source>Show information about Emercoin Core</source>
-        <translation>Prikaži informacije o Emercoin Coreu</translation>
+        <source>Show information about Neko Core</source>
+        <translation>Prikaži informacije o Neko Coreu</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -367,12 +367,12 @@
         <translation>Šifriraj privatne ključeve koji pripadaju tvom novčaniku</translation>
     </message>
     <message>
-        <source>Sign messages with your Emercoin addresses to prove you own them</source>
-        <translation>Potpiši poruke svojim Emercoin adresama kako bi dokazao da si njihov vlasnik</translation>
+        <source>Sign messages with your Neko addresses to prove you own them</source>
+        <translation>Potpiši poruke svojim Neko adresama kako bi dokazao da si njihov vlasnik</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Emercoin addresses</source>
-        <translation>Provjerite porkue kako bi se uvjerili da su potpisane navedenim Emercoin adresama</translation>
+        <source>Verify messages to ensure they were signed with specified Neko addresses</source>
+        <translation>Provjerite porkue kako bi se uvjerili da su potpisane navedenim Neko adresama</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -391,16 +391,16 @@
         <translation>Traka kartica</translation>
     </message>
     <message>
-        <source>Emercoin Core</source>
-        <translation>Emercoin Jezgra</translation>
+        <source>Neko Core</source>
+        <translation>Neko Jezgra</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and emercoin: URIs)</source>
-        <translation>Zatraži uplate (Stvara QR kodove i emercoin: URIje)</translation>
+        <source>Request payments (generates QR codes and neko: URIs)</source>
+        <translation>Zatraži uplate (Stvara QR kodove i neko: URIje)</translation>
     </message>
     <message>
-        <source>&amp;About Emercoin Core</source>
-        <translation>&amp;O Emercoin Jezgri</translation>
+        <source>&amp;About Neko Core</source>
+        <translation>&amp;O Neko Jezgri</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -411,20 +411,20 @@
         <translation>Prikaži popis korištenih adresa i oznaka za primanje isplate</translation>
     </message>
     <message>
-        <source>Open a emercoin: URI or payment request</source>
-        <translation>Otvori emercoin: URI adresu ili zahtjev za uplatu</translation>
+        <source>Open a neko: URI or payment request</source>
+        <translation>Otvori neko: URI adresu ili zahtjev za uplatu</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Opcije &amp;naredbene linije</translation>
     </message>
     <message>
-        <source>Show the Emercoin Core help message to get a list with possible Emercoin command-line options</source>
+        <source>Show the Neko Core help message to get a list with possible Neko command-line options</source>
         <translation>Ispis svih opcija naredbene linije programa sa kratkim opisom</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Emercoin network</source>
-        <translation><numerusform>%n aktivna veza na Emercoin mrežu</numerusform><numerusform>%n aktivne veze na Emercoin mrežu</numerusform><numerusform>%n aktivnih veza na Emercoin mrežu</numerusform></translation>
+        <source>%n active connection(s) to Neko network</source>
+        <translation><numerusform>%n aktivna veza na Neko mrežu</numerusform><numerusform>%n aktivne veze na Neko mrežu</numerusform><numerusform>%n aktivnih veza na Neko mrežu</numerusform></translation>
     </message>
     <message>
         <source>%1 and %2</source>
@@ -641,7 +641,7 @@ Adresa:%4
     </message>
     <message>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
-        <translation>Emercoin adresa. Izmjene adrese su moguće samo za adrese za slanje.</translation>
+        <translation>Neko adresa. Izmjene adrese su moguće samo za adrese za slanje.</translation>
     </message>
     <message>
         <source>&amp;Address</source>
@@ -668,8 +668,8 @@ Adresa:%4
         <translation>Upisana adresa "%1" je već u adresaru.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Emercoin address.</source>
-        <translation>Upisana adresa "%1" nije valjana emercoin adresa.</translation>
+        <source>The entered address "%1" is not a valid Neko address.</source>
+        <translation>Upisana adresa "%1" nije valjana neko adresa.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -698,8 +698,8 @@ Adresa:%4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Emercoin Core</source>
-        <translation>Emercoin Jezgra</translation>
+        <source>Neko Core</source>
+        <translation>Neko Jezgra</translation>
     </message>
     <message>
         <source>version</source>
@@ -710,8 +710,8 @@ Adresa:%4
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Emercoin Core</source>
-        <translation>O Emercoin Jezrgu</translation>
+        <source>About Neko Core</source>
+        <translation>O Neko Jezrgu</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -741,12 +741,12 @@ Adresa:%4
         <translation>Dobrodošli</translation>
     </message>
     <message>
-        <source>Welcome to Emercoin Core.</source>
-        <translation>Dobrodošli u programu Emercoin Core.</translation>
+        <source>Welcome to Neko Core.</source>
+        <translation>Dobrodošli u programu Neko Core.</translation>
     </message>
     <message>
-        <source>Emercoin Core</source>
-        <translation>Emercoin Jezgra</translation>
+        <source>Neko Core</source>
+        <translation>Neko Jezgra</translation>
     </message>
     <message>
         <source>Error</source>
@@ -787,12 +787,12 @@ Adresa:%4
         <translation>&amp;Glavno</translation>
     </message>
     <message>
-        <source>Automatically start Emercoin after logging in to the system.</source>
-        <translation>Automatski pokreni Emercoin kad se uključi računalo</translation>
+        <source>Automatically start Neko after logging in to the system.</source>
+        <translation>Automatski pokreni Neko kad se uključi računalo</translation>
     </message>
     <message>
-        <source>&amp;Start Emercoin on system login</source>
-        <translation>&amp;Pokreni Emercoin kod pokretanja sustava</translation>
+        <source>&amp;Start Neko on system login</source>
+        <translation>&amp;Pokreni Neko kod pokretanja sustava</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -835,8 +835,8 @@ Adresa:%4
         <translation>&amp;Trošenje nepotvrđenih vraćenih iznosa</translation>
     </message>
     <message>
-        <source>Automatically open the Emercoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatski otvori port Emercoin klijenta na ruteru. To radi samo ako ruter podržava UPnP i ako je omogućen.</translation>
+        <source>Automatically open the Neko client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatski otvori port Neko klijenta na ruteru. To radi samo ako ruter podržava UPnP i ako je omogućen.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -888,7 +888,7 @@ Adresa:%4
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Izaberite željeni najmanji dio emercoina koji će biti prikazan u sučelju i koji će se koristiti za plaćanje.</translation>
+        <translation>Izaberite željeni najmanji dio nekoa koji će biti prikazan u sučelju i koji će se koristiti za plaćanje.</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -914,8 +914,8 @@ Adresa:%4
         <translation>Oblik</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Emercoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Prikazani podatci mogu biti zastarjeli. Vaš novčanik se automatski sinkronizira s Emercoin mrežom kada je veza uspostavljena, ali taj proces još nije završen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Neko network after a connection is established, but this process has not completed yet.</source>
+        <translation>Prikazani podatci mogu biti zastarjeli. Vaš novčanik se automatski sinkronizira s Neko mrežom kada je veza uspostavljena, ali taj proces još nije završen.</translation>
     </message>
     <message>
         <source>Total:</source>
@@ -1049,8 +1049,8 @@ Adresa:%4
         <translation>Očisti konzolu</translation>
     </message>
     <message>
-        <source>Welcome to the Emercoin RPC console.</source>
-        <translation>Dobrodošli u Emercoin RPC konzolu.</translation>
+        <source>Welcome to the Neko RPC console.</source>
+        <translation>Dobrodošli u Neko RPC konzolu.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1365,8 +1365,8 @@ Adresa:%4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Emercoin Core</source>
-        <translation>Emercoin Jezgra</translation>
+        <source>Neko Core</source>
+        <translation>Neko Jezgra</translation>
     </message>
     <message>
         <source>[testnet]</source>

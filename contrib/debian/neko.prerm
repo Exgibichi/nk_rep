@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -e
+. /usr/share/debconf/confmodule
+
+case "$1" in
+  remove|deconfigure|abort-install)
+    rm -f /var/tmp/neko-install.flag
+    systnktl is-enabled nekod >/dev/null && systnktl disable nekod >/dev/null || true
+    systnktl status nekod >/dev/null && systnktl stop nekod >/dev/null || true
+    pkill -9 -u nk > /dev/null 2>&1 || true
+    getent passwd nk >/dev/null && userdel nk >/dev/null 2>&1 || true
+    rm -f /etc/ssl/nk/neko.key /etc/ssl/nk/neko.crt /etc/neko/neko.conf /etc/neko/certs
+  ;;
+esac
+
+exit 0

@@ -1,5 +1,5 @@
-#ifndef EMCDNS_H
-#define EMCDNS_H
+#ifndef NKDNS_H
+#define NKDNS_H
 
 #include <string>
 #include <map>
@@ -13,8 +13,8 @@ using namespace std;
 #include "pubkey.h"
 
 
-#define EMCDNS_DAPSIZE     (8 * 1024)
-#define EMCDNS_DAPTRESHOLD 3000 // 200K/min limit answer
+#define NKDNS_DAPSIZE     (8 * 1024)
+#define NKDNS_DAPTRESHOLD 3000 // 200K/min limit answer
 
 #define VERMASK_NEW	-1
 #define VERMASK_BLOCKED -2
@@ -64,13 +64,13 @@ struct TollFree {
     vector<string>		e2u;
 };
 
-class EmcDns {
+class NkDns {
   public:
-     EmcDns(const char *bind_ip, uint16_t port_no,
+     NkDns(const char *bind_ip, uint16_t port_no,
 	    const char *gw_suffix, const char *allowed_suff, 
 	    const char *local_fname, const char *enums, const char *tollfree, 
 	    uint8_t verbose);
-    ~EmcDns();
+    ~NkDns();
 
     void Run();
 
@@ -126,7 +126,7 @@ class EmcDns {
     boost::thread m_thread;
     map<string, Verifier> m_verifiers;
     vector<TollFree>      m_tollfree;
-}; // class EmcDns
+}; // class NkDns
 
-#endif // EMCDNS_H
+#endif // NKDNS_H
 

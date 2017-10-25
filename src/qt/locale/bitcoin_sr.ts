@@ -96,8 +96,8 @@
         <translation>Одобрите шифровање новчаника</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR EMERCOINS&lt;/b&gt;!</source>
-        <translation>Упозорење: Ако се ваш новчаник шифрује а потом изгубите лозинкзу, ви ћете &lt;b&gt;ИЗГУБИТИ СВЕ EMERCOIN-Е&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NEKOS&lt;/b&gt;!</source>
+        <translation>Упозорење: Ако се ваш новчаник шифрује а потом изгубите лозинкзу, ви ћете &lt;b&gt;ИЗГУБИТИ СВЕ NEKO-Е&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -108,8 +108,8 @@
         <translation>Новчаник је шифрован</translation>
     </message>
     <message>
-        <source>Emercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your emercoins from being stolen by malware infecting your computer.</source>
-        <translation>Emercoin će se sad zatvoriti da bi završio  proces enkripcije. Zapamti da enkripcija tvog novčanika ne može u potpunosti da zaštiti tvoje emercoine da ne budu ukradeni od malawarea koji bi inficirao tvoj kompjuter.</translation>
+        <source>Neko will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your nekos from being stolen by malware infecting your computer.</source>
+        <translation>Neko će se sad zatvoriti da bi završio  proces enkripcije. Zapamti da enkripcija tvog novčanika ne može u potpunosti da zaštiti tvoje nekoe da ne budu ukradeni od malawarea koji bi inficirao tvoj kompjuter.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -195,12 +195,12 @@
         <translation>Промени &amp;лозинку...</translation>
     </message>
     <message>
-        <source>Send coins to an Emercoin address</source>
-        <translation>Пошаљите новац на emercoin адресу</translation>
+        <source>Send coins to an Neko address</source>
+        <translation>Пошаљите новац на neko адресу</translation>
     </message>
     <message>
-        <source>Modify configuration options for Emercoin</source>
-        <translation>Изаберите могућности emercoin-а</translation>
+        <source>Modify configuration options for Neko</source>
+        <translation>Изаберите могућности neko-а</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
@@ -334,8 +334,8 @@ Address: %4
         <translation>верзија</translation>
     </message>
     <message>
-        <source>About Emercoin Core</source>
-        <translation>O Emercoin Coru</translation>
+        <source>About Neko Core</source>
+        <translation>O Neko Coru</translation>
     </message>
     <message>
         <source>Usage:</source>

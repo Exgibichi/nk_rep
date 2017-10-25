@@ -11,12 +11,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Emercoin</source>
-        <translation>Emercoin</translation>
+        <source>Neko</source>
+        <translation>Neko</translation>
     </message>
     <message>
-        <source>Emercoin Core</source>
-        <translation>Emercoin Jezrga</translation>
+        <source>Neko Core</source>
+        <translation>Neko Jezrga</translation>
     </message>
     </context>
 <context>
@@ -34,15 +34,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Emercoin Core</source>
-        <translation>Emercoin Jezrga</translation>
+        <source>Neko Core</source>
+        <translation>Neko Jezrga</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Emercoin Core</source>
-        <translation>Emercoin Jezrga</translation>
+        <source>Neko Core</source>
+        <translation>Neko Jezrga</translation>
     </message>
     </context>
 <context>
@@ -109,8 +109,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Emercoin Core</source>
-        <translation>Emercoin Jezrga</translation>
+        <source>Neko Core</source>
+        <translation>Neko Jezrga</translation>
     </message>
     </context>
 <context>

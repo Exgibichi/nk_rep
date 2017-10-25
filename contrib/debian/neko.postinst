@@ -1,0 +1,26 @@
+#!/bin/bash
+
+set -e
+. /usr/share/debconf/confmodule
+
+case "$1" in
+  configure)
+    sed -i -e "s/\(^rpcpassword=MySuperPassword\)\(.*\)/rpcpassword=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)/" /var/lib/nk/.neko/neko.conf
+    chmod 600 /var/lib/nk/.neko/neko.conf
+    chown -R nk.nk /var/lib/nk/.neko /usr/bin/neko-cli
+    chmod 4750 /usr/bin/neko-cli
+    mkdir -p /etc/neko
+    ln -sf /var/lib/nk/.neko/neko.conf /etc/neko/neko.conf || true
+    ln -sf /etc/ssl/nk /etc/neko/certs || true
+    systnktl daemon-reload
+    [ -f /var/tmp/neko-install.flag ] && {
+      rm -f /var/tmp/neko-install.flag
+      systnktl enable nekod
+    }
+    systnktl status nekod >/dev/null 2>&1 && systnktl restart nekod || {
+      systnktl is-enabled nekod >/dev/null 2>&1 && systnktl start nekod || true
+    }
+  ;;
+esac
+
+exit 0

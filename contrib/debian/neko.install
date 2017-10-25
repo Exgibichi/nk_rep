@@ -1,0 +1,7 @@
+contrib/debian/nk usr/bin
+contrib/debian/neko.conf var/lib/nk/.neko
+contrib/debian/nekod.service lib/systemd/system
+contrib/debian/nekod.logrotate etc/logrotate.d
+usr/local/bin/nekod usr/bin
+usr/local/bin/neko-cli usr/bin
+usr/local/bin/neko-tx usr/bin

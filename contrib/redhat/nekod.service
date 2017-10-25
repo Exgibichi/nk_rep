@@ -1,0 +1,15 @@
+[Unit]
+Description=Neko Wallet
+After=network.target
+
+[Service]
+Type=forking
+User=nk
+ExecStart=/usr/bin/nekod -daemon -datadir=/var/lib/nk/.neko -conf=/var/lib/nk/.neko/neko.conf -pid=/var/lib/nk/.neko/nekod.pid
+ExecStop=/usr/bin/neko-cli -datadir=/var/lib/nk/.neko stop
+ExecReload=/usr/bin/kill -HUP $MAINPID
+PIDFile=/var/lib/nk/.neko/nekod.pid
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

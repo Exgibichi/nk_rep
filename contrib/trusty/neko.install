@@ -1,0 +1,7 @@
+contrib/trusty/nk usr/bin
+contrib/trusty/neko.conf var/lib/nk/.neko
+contrib/trusty/nekod etc/init.d
+contrib/trusty/nekod.logrotate etc/logrotate.d
+usr/local/bin/nekod usr/bin
+usr/local/bin/neko-cli usr/bin
+usr/local/bin/neko-tx usr/bin

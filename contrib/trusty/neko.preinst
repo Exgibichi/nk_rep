@@ -1,0 +1,21 @@
+#!/bin/bash
+
+set -e
+. /usr/share/debconf/confmodule
+
+case "$1" in
+  install)
+    getent passwd nk >/dev/null || {
+      groupadd -r nk && useradd -r -m -d /var/lib/nk -k /dev/null -s /bin/false -g nk nk
+    }
+    [ ! -f /etc/ssl/nk/neko.key ] || [ ! -f /etc/ssl/nk/neko.crt ] && {
+      mkdir -p /etc/ssl/nk
+      openssl req -nodes -x509 -newkey rsa:4096 -keyout /etc/ssl/nk/neko.key -out /etc/ssl/nk/neko.crt -days 3560 -subj /C=CY/L=Nicosia/O=Neko/CN=neko.local >/dev/null 2>&1
+      chown nk.nk /etc/ssl/nk/neko.key /etc/ssl/nk/neko.crt
+      chmod 600 /etc/ssl/nk/neko.key
+    }
+    touch /var/tmp/neko-install.flag
+  ;;
+esac
+
+exit 0
