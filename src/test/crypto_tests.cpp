@@ -152,7 +152,7 @@ BOOST_AUTO_TEST_CASE(sha512_testvectors) {
                "96fd15c13b1b07f9aa1d3bea57789ca031ad85c7a71dd70354ec631238ca3445");
     TestSHA512("For this sample, this 63-byte string will be used as input data",
                "b3de4afbc516d2478fe9b518d063bda6c8dd65fc38402dd81d1eb7364e72fb6e"
-               "6663cf6d2771c8f5a6da09601712fb3d2a36c6ffea3e28b0818b05b0a8660766");
+               "6363cf6d2771c8f5a6da09601712fb3d2a36c6ffea3e28b0818b05b0a8660766");
     TestSHA512("This is exactly 64 bytes long, not counting the terminating byte",
                "70aefeaa0e7ac4f8fe17532d7185a289bee3b428d950c14fa8b713ca09814a38"
                "7d245870e007a80ad97c369d193e41701aa07f3221d15f0e65a1ff970cedf030");

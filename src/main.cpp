@@ -752,7 +752,7 @@ bool IsFinalTx(const CTransaction &tx, int nBlockHeight, int64_t nBlockTime)
 /**
  * Check transaction inputs to mitigate two
  * potential denial-of-service attacks:
- * 
+ *
  * 1. scriptSigs with extra data stuffed into them,
  *    not consumed by scriptPubKey (or P2SH script)
  * 2. P2SH scripts with a crazy number of expensive
@@ -1228,53 +1228,28 @@ bool GuessPoS(const CBlockHeader& header)
     // neko: in our official blockchain we currently have max PoS == 37.4635 (for blocks 1..129646)
     // it is probably safe to assume that it won't go over 1000
     // it is also probably safe to assume, that PoW difficulty will never drop to 1000 or below (it would require less than 7.15 GH/S of mining power over entire network!)
-    return GetDifficulty(header.nBits) <= 1000 ? true : false;
+    return GetDifficulty(header.nBits) <= 1 ? true : false;
 }
 
-CAmount GetProofOfWorkReward(unsigned int nBits)
+CAmount GetProofOfWorkReward(unsigned int nHeight)
 {
-    CBigNum bnSubsidyLimit = MAX_MINT_PROOF_OF_WORK;
-    CBigNum bnTarget;
-    bnTarget.SetCompact(nBits);
-    CBigNum bnTargetLimit(Params().ProofOfWorkLimit());
-    bnTargetLimit.SetCompact(bnTargetLimit.GetCompact());
-
-    // ppcoin: subsidy is cut in half every 16x multiply of difficulty
-    // A reasonably continuous curve is used to avoid shock to market
-    // (nSubsidyLimit / nSubsidy) ** 4 == bnProofOfWorkLimit / bnTarget
-    CBigNum bnLowerBound = CENT;
-    CBigNum bnUpperBound = bnSubsidyLimit;
-    CBigNum bnMidPart, bnRewardPart;
-
-    bool bLowDiff = GetDifficulty(nBits) < 512;
-    bnRewardPart = bLowDiff ? bnSubsidyLimit * bnSubsidyLimit * bnSubsidyLimit * bnSubsidyLimit * bnSubsidyLimit * bnSubsidyLimit :
-                              bnSubsidyLimit * bnSubsidyLimit * bnSubsidyLimit * bnSubsidyLimit;
-    while (bnLowerBound + CENT <= bnUpperBound)
-    {
-        CBigNum bnMidValue = (bnLowerBound + bnUpperBound) / 2;
-        bnMidPart = bLowDiff ? bnMidValue * bnMidValue * bnMidValue * bnMidValue * bnMidValue * bnMidValue :
-                               bnMidValue * bnMidValue * bnMidValue * bnMidValue;
-        if (fDebug && GetBoolArg("-printcreation", false))
-            LogPrintf("GetProofOfWorkReward() : lower=%lld upper=%lld mid=%lld\n", bnLowerBound.getuint64(), bnUpperBound.getuint64(), bnMidValue.getuint64());
-
-        if (bnMidPart * bnTargetLimit > bnRewardPart * bnTarget)
-            bnUpperBound = bnMidValue;
-        else
-            bnLowerBound = bnMidValue;
+    CAmount nSubsidy = MAX_MINT_PROOF_OF_WORK;
+    if (nHeight <= 101) {
+        return 200 * nSubsidy;
     }
-
-    CAmount nSubsidy = bnUpperBound.getuint64();
-    nSubsidy = (nSubsidy / CENT) * CENT;
-    if (fDebug && GetBoolArg("-printcreation", false))
-        LogPrintf("GetProofOfWorkReward() : create=%s nBits=0x%08x nSubsidy=%lld\n", FormatMoney(nSubsidy), nBits, nSubsidy);
-
-    return min(nSubsidy, MAX_MINT_PROOF_OF_WORK);
+    int halvings = nHeight / 500000;
+    // Force block reward to zero when right shift is undefined.
+    if (halvings >= 64)
+        return 0;
+    // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
+    nSubsidy >>= halvings;
+    return nSubsidy;
 }
 
 // ppcoin: miner's coin stake is rewarded based on coin age spent (coin-days)
 CAmount GetProofOfStakeReward(int64_t nCoinAge)
 {
-    static int64_t nRewardCoinYear = 6 * CENT;  // creation amount per coin-year
+    static int64_t nRewardCoinYear = 8 * CENT;  // creation amount per coin-year
     int64_t nSubsidy = nCoinAge * 33 / (365 * 33 + 8) * nRewardCoinYear;
     if (fDebug && GetBoolArg("-printcreation", false))
         LogPrintf("GetProofOfStakeReward(): create=%s nCoinAge=%lld\n", FormatMoney(nSubsidy), nCoinAge);
@@ -1290,10 +1265,10 @@ bool IsInitialBlockDownload()
 
       const CChainParams& chainParams = Params();
       LOCK(cs_main);
- 
+
       if (fImporting || fReindex)
         break; // ret true
- 
+
       int cah = chainActive.Height();
 
       if(cah < Checkpoints::GetTotalBlocksEstimate() || cah < pindexBestHeader->nHeight - 24 * 6)
@@ -1803,7 +1778,8 @@ static bool CheckCoinbaseReward(const CBlock& block, CValidationState& state, CB
     // Check coinbase reward
     bool fV6Rule = block.GetBlockVersion() >= 6 && CBlockIndex::IsSuperMajority(6, pindexPrev, Params().RejectBlockOutdatedMajority());
     CAmount txFeeCancelation = fV6Rule ? MIN_TX_FEE : CENT;
-    CAmount powLimit = block.IsProofOfWork() ? GetProofOfWorkReward(block.nBits) - block.vtx[0].GetMinFee() + txFeeCancelation : 0;
+    unsigned int nHeight = pindexPrev && pindexPrev->nHeight ? pindexPrev->nHeight : 1;
+    CAmount powLimit = block.IsProofOfWork() ? GetProofOfWorkReward(nHeight) - block.vtx[0].GetMinFee() + txFeeCancelation : 0;
     if (block.vtx[0].GetValueOut() > powLimit)
         return state.DoS(100, error("ContextualCheckBlock() : coinbase pays too much (actual=%d vs limit=%d)",
                          block.vtx[0].GetValueOut(), powLimit), REJECT_INVALID, "bad-cb-amount");
@@ -2199,7 +2175,7 @@ static int64_t nTimeFlush = 0;
 static int64_t nTimeChainState = 0;
 static int64_t nTimePostConnect = 0;
 
-/** 
+/**
  * Connect a new block to chainActive. pblock is either NULL or a pointer to a CBlock
  * corresponding to pindexNew, to bypass loading it again from disk.
  */
@@ -4730,8 +4706,8 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 
     // This asymmetric behavior for inbound and outbound connections was introduced
     // to prevent a fingerprinting attack: an attacker can send specific fake addresses
-    // to users' AddrMan and later request them by sending getaddr messages. 
-    // Making users (which are behind NAT and can only make outgoing connections) ignore 
+    // to users' AddrMan and later request them by sending getaddr messages.
+    // Making users (which are behind NAT and can only make outgoing connections) ignore
     // getaddr message mitigates the attack.
     else if ((strCommand == "getaddr") && (pfrom->fInbound))
     {

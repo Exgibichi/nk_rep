@@ -359,7 +359,7 @@ CBlockTemplate* CreateNewBlockInner(const CScript& scriptPubKeyIn, bool fAddProo
 
         // Compute final coinbase transaction.
         if (pblock->IsProofOfWork())
-            txNew.vout[0].nValue = GetProofOfWorkReward(pblock->nBits);
+            txNew.vout[0].nValue = GetProofOfWorkReward(nHeight);
         txNew.vin[0].scriptSig = CScript() << nHeight << OP_0;
         pblock->vtx[0] = txNew;
         pblocktemplate->vTxFees[0] = -nFees;
