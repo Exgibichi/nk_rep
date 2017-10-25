@@ -1,7 +1,7 @@
 Neko Core integration/staging tree
 =====================================
 
-https://neko.com/
+http://enterneko.com
 
 What is Neko?
 ----------------
@@ -15,7 +15,7 @@ Proof-of-Work and Auxilary-Proof-of-Work mechanisms. **Neko** Core is the name o
 open source software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the **Neko Core** software, see [here](https://neko.com/).
+the **Neko Core** software, see [here](http://enterneko.com/).
 
 License
 -------
