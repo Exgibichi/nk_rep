@@ -107,7 +107,7 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 24 * 60 * 60; // one week
+        nTargetTimespan = 1 * 24 * 60 * 60; // one day
         nTargetSpacing = 8 * 60;           // 8 minutes. affects network code only
 
         // ppcoin: PoS spacing = nStakeTargetSpacing
