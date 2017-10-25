@@ -186,11 +186,12 @@ void WalletView::gotoSendCoinsPage(QString addr)
         sendCoinsPage->setAddress(addr);
 }
 
+/*
 void WalletView::gotoManageNamesPage()
 {
     setCurrentWidget(manageNamesPage);
 }
-
+*/
 void WalletView::gotoSignMessageTab(QString addr)
 {
     // calls show() in showTab_SM()

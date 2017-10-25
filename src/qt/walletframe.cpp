@@ -132,14 +132,14 @@ void WalletFrame::gotoSendCoinsPage(QString addr)
     for (i = mapWalletViews.constBegin(); i != mapWalletViews.constEnd(); ++i)
         i.value()->gotoSendCoinsPage(addr);
 }
-
+/*
 void WalletFrame::gotoManageNamesPage()
 {
     QMap<QString, WalletView*>::const_iterator i;
     for (i = mapWalletViews.constBegin(); i != mapWalletViews.constEnd(); ++i)
         i.value()->gotoManageNamesPage();
 }
-
+*/
 void WalletFrame::gotoSignMessageTab(QString addr)
 {
     WalletView *walletView = currentWalletView();
@@ -200,4 +200,3 @@ WalletView *WalletFrame::currentWalletView()
 {
     return qobject_cast<WalletView*>(walletStack->currentWidget());
 }
-
