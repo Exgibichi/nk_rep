@@ -78,7 +78,7 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle *networkStyle, QWidget *parent) :
     historyAction(0),
     quitAction(0),
     sendCoinsAction(0),
-    manageNamesAction(0),
+    //manageNamesAction(0),
     usedSendingAddressesAction(0),
     usedReceivingAddressesAction(0),
     signMessageAction(0),
@@ -258,14 +258,14 @@ void BitcoinGUI::createActions(const NetworkStyle *networkStyle)
     receiveCoinsAction->setCheckable(true);
     receiveCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_3));
     tabGroup->addAction(receiveCoinsAction);
-
+/*
     manageNamesAction = new QAction(QIcon(":/icons/name2"), tr("&Manage Names"), this);
     manageNamesAction->setStatusTip(tr("Manage values registered via Neko"));
     manageNamesAction->setToolTip(manageNamesAction->statusTip());
     manageNamesAction->setCheckable(true);
     manageNamesAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_6));
     tabGroup->addAction(manageNamesAction);
-
+*/
     historyAction = new QAction(QIcon(":/icons/history"), tr("&Transactions"), this);
     historyAction->setStatusTip(tr("Browse transaction history"));
     historyAction->setToolTip(historyAction->statusTip());
@@ -282,8 +282,8 @@ void BitcoinGUI::createActions(const NetworkStyle *networkStyle)
     connect(sendCoinsAction, SIGNAL(triggered()), this, SLOT(gotoSendCoinsPage()));
     connect(receiveCoinsAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(receiveCoinsAction, SIGNAL(triggered()), this, SLOT(gotoReceiveCoinsPage()));
-    connect(manageNamesAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
-    connect(manageNamesAction, SIGNAL(triggered()), this, SLOT(gotoManageNamesPage()));
+    //connect(manageNamesAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
+    //connect(manageNamesAction, SIGNAL(triggered()), this, SLOT(gotoManageNamesPage()));
     connect(historyAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(historyAction, SIGNAL(triggered()), this, SLOT(gotoHistoryPage()));
 #endif // ENABLE_WALLET
@@ -415,7 +415,7 @@ void BitcoinGUI::createToolBars()
         toolbar->addAction(sendCoinsAction);
         toolbar->addAction(receiveCoinsAction);
         toolbar->addAction(historyAction);
-        toolbar->addAction(manageNamesAction);
+    //    toolbar->addAction(manageNamesAction);
         overviewAction->setChecked(true);
     }
 }
@@ -490,7 +490,7 @@ void BitcoinGUI::setWalletActionsEnabled(bool enabled)
 {
     overviewAction->setEnabled(enabled);
     sendCoinsAction->setEnabled(enabled);
-    manageNamesAction->setEnabled(enabled);
+//    manageNamesAction->setEnabled(enabled);
     receiveCoinsAction->setEnabled(enabled);
     historyAction->setEnabled(enabled);
     encryptWalletAction->setEnabled(enabled);
@@ -540,7 +540,7 @@ void BitcoinGUI::createTrayIconMenu()
     trayIconMenu->addSeparator();
     trayIconMenu->addAction(sendCoinsAction);
     trayIconMenu->addAction(receiveCoinsAction);
-    trayIconMenu->addAction(manageNamesAction);
+//    trayIconMenu->addAction(manageNamesAction);
     trayIconMenu->addSeparator();
     trayIconMenu->addAction(signMessageAction);
     trayIconMenu->addAction(verifyMessageAction);
@@ -631,13 +631,13 @@ void BitcoinGUI::gotoSendCoinsPage(QString addr)
     sendCoinsAction->setChecked(true);
     if (walletFrame) walletFrame->gotoSendCoinsPage(addr);
 }
-
+/*
 void BitcoinGUI::gotoManageNamesPage()
 {
     manageNamesAction->setChecked(true);
     if (walletFrame) walletFrame->gotoManageNamesPage();
 }
-
+*/
 void BitcoinGUI::gotoSignMessageTab(QString addr)
 {
     if (walletFrame) walletFrame->gotoSignMessageTab(addr);
