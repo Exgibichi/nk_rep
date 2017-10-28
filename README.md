@@ -34,7 +34,7 @@ development team members simply pulls it.
 
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/Exgibichi/neko/releases) are created
+completely stable. [Tags](https://github.com/enterneko/neko/releases) are created
 regularly to indicate new official, stable release versions of **Neko**.
 
 Testing
@@ -49,13 +49,6 @@ lots of money.
 
 Developers are strongly encouraged to write unit tests for new code, and to
 submit new unit tests for old code. Unit tests can be compiled and run (assuming they weren't disabled in configure) with: `make check`
-
-### Manual Quality Assurance (QA) Testing
-
-Large changes should have a test plan, and should be tested by somebody other
-than the developer who wrote the code.
-
-See [here](https://github.com/bitcoin/QA/) for how to create a test plan.
 
 Development tips and tricks
 ---------------------------
