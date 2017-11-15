@@ -3895,7 +3895,8 @@ string GetWarnings(string strFor)
     if (!RPCIsInWarmup(&statusmessage) && CheckpointsSync::IsSyncCheckpointTooOld(60 * 60 * 24 * 10))
     {
         nPriority = 100;
-        strStatusBar = "WARNING: Checkpoint is too old. Wait for block chain to download, or notify developers of the issue.";
+        //strStatusBar = "WARNING: Checkpoint is too old. Wait for block chain to download, or notify developers of the issue.";
+        strStatusBar = "";
     }
 
     // Misc warnings like out of disk space and clock is wrong
