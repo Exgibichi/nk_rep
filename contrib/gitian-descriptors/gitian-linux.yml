@@ -19,7 +19,7 @@ packages:
 - "ca-certificates"
 reference_datetime: "2016-01-01 00:00:00"
 remotes:
-- "url": "https://github.com/Exgibichi/neko.git"
+- "url": "https://github.com/enterneko/Neko.git"
   "dir": "neko"
 files: []
 script: |
