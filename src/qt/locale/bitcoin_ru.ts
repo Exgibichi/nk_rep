@@ -161,7 +161,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NEKOS&lt;/b&gt;!</source>
-        <translation>Предупреждение: если вы зашифруете бумажник и потеряете пароль, вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ ВАШИ ЕМЕРКОЙНЫ&lt;/b&gt;!</translation>
+        <translation>Предупреждение: если вы зашифруете бумажник и потеряете пароль, вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ ВАШИ NekoЫ&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -185,7 +185,7 @@
     </message>
     <message>
         <source>Neko will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your nekos from being stolen by malware infecting your computer.</source>
-        <translation>Сейчас программа закроется для завершения процесса шифрования. Помните, что шифрование вашего бумажника не может полностью защитить ваши емеркойны от кражи с помощью инфицирования вашего компьютера вредоносным ПО.</translation>
+        <translation>Сейчас программа закроется для завершения процесса шифрования. Помните, что шифрование вашего бумажника не может полностью защитить ваши Nekoы от кражи с помощью инфицирования вашего компьютера вредоносным ПО.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -332,7 +332,7 @@
     </message>
     <message>
         <source>Neko</source>
-        <translation>Емеркойн</translation>
+        <translation>Neko</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1993,7 +1993,7 @@
     </message>
     <message>
         <source>WARNING: You're using external service! Neko is not responsible for functionality and correct behavior of this service.</source>
-        <translation>ВНИМАНИЕ: Вы  используете внешний сервис! Емеркоин не несет ответственность за его функциональность и правильную работу.</translation>
+        <translation>ВНИМАНИЕ: Вы  используете внешний сервис! Neko не несет ответственность за его функциональность и правильную работу.</translation>
     </message>
     <message>
         <source>Usage: Enter amount, currency type and address. Press Request Payment and select desired exchange service.</source>

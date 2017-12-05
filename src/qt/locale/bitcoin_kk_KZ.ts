@@ -108,7 +108,7 @@
     </message>
     <message>
         <source>Neko</source>
-        <translation>Емеркоин</translation>
+        <translation>Neko</translation>
     </message>
     <message>
         <source>Wallet</source>

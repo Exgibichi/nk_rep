@@ -153,7 +153,7 @@
     </message>
     <message>
         <source>Neko will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your nekos from being stolen by malware infecting your computer.</source>
-        <translation>Цоожлолтын процесыг дуусгахын тулд Емеркойн одоо хаагдана. Ѳѳрийн түрүйвчийг цоожлох нь таны емеркойнуудыг компьютерийн вирус хулгайлахаас бүрэн сэргийлж чадахгүй гэдгийг санаарай.</translation>
+        <translation>Цоожлолтын процесыг дуусгахын тулд Neko одоо хаагдана. Ѳѳрийн түрүйвчийг цоожлох нь таны Nekoуудыг компьютерийн вирус хулгайлахаас бүрэн сэргийлж чадахгүй гэдгийг санаарай.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -248,7 +248,7 @@
     </message>
     <message>
         <source>Neko</source>
-        <translation>Емеркойн</translation>
+        <translation>Neko</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -272,7 +272,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Neko network</source>
-        <translation><numerusform>Емеркойны сүлжээрүү %n идэвхитэй холболт байна </numerusform><numerusform>Емеркойны сүлжээрүү %n идэвхитэй холболтууд байна </numerusform></translation>
+        <translation><numerusform>Nekoы сүлжээрүү %n идэвхитэй холболт байна </numerusform><numerusform>Nekoы сүлжээрүү %n идэвхитэй холболтууд байна </numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
@@ -709,7 +709,7 @@ Address: %4
     </message>
     <message>
         <source>Warning: Invalid Neko address</source>
-        <translation>Анхаар:Буруу Емеркойны хаяг байна</translation>
+        <translation>Анхаар:Буруу Nekoы хаяг байна</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -755,7 +755,7 @@ Address: %4
     <name>ShutdownWindow</name>
     <message>
         <source>Neko Core is shutting down...</source>
-        <translation>Емеркойны цѳм хаагдаж байна...</translation>
+        <translation>Nekoы цѳм хаагдаж байна...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>

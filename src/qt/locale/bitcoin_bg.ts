@@ -71,7 +71,7 @@
     </message>
     <message>
         <source>These are your Neko addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са Вашите Емеркойн адреси,благодарение на които ще получавате плащания.Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
+        <translation>Това са Вашите Neko адреси,благодарение на които ще получавате плащания.Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -165,7 +165,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR NEKOS&lt;/b&gt;!</source>
-        <translation>ВНИМАНИЕ: Ако защитите вашият портфейл и изгубите ключовата дума, вие ще &lt;b&gt;ИЗГУБИТЕ ВСИЧКИТЕ СИ ЕМЕРКОЙНОВЕ&lt;/b&gt;!</translation>
+        <translation>ВНИМАНИЕ: Ако защитите вашият портфейл и изгубите ключовата дума, вие ще &lt;b&gt;ИЗГУБИТЕ ВСИЧКИТЕ СИ NekoОВЕ&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -185,7 +185,7 @@
     </message>
     <message>
         <source>Neko will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your nekos from being stolen by malware infecting your computer.</source>
-        <translation>Емеркоин ще се затоври сега за да завърши процеса на криптиране. Запомнете, че криптирането на вашия портефейл не може напълно да предпази вашите Бит-монети от кражба чрез зловреден софтуер, инфектирал вашия компютър</translation>
+        <translation>Neko ще се затоври сега за да завърши процеса на криптиране. Запомнете, че криптирането на вашия портефейл не може напълно да предпази вашите Бит-монети от кражба чрез зловреден софтуер, инфектирал вашия компютър</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -296,11 +296,11 @@
     </message>
     <message>
         <source>Send coins to an Neko address</source>
-        <translation>Изпращане към Емеркоин адрес</translation>
+        <translation>Изпращане към Neko адрес</translation>
     </message>
     <message>
         <source>Modify configuration options for Neko</source>
-        <translation>Променете настройките на Емеркойн</translation>
+        <translation>Променете настройките на Neko</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -324,7 +324,7 @@
     </message>
     <message>
         <source>Neko</source>
-        <translation>Емеркоин</translation>
+        <translation>Neko</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -340,7 +340,7 @@
     </message>
     <message>
         <source>Show information about Neko Core</source>
-        <translation>Покажете информация за Емеркойн ядрото</translation>
+        <translation>Покажете информация за Neko ядрото</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -356,11 +356,11 @@
     </message>
     <message>
         <source>Sign messages with your Neko addresses to prove you own them</source>
-        <translation>Пишете съобщения със своя Емеркойн адрес за да докажете,че е ваш.</translation>
+        <translation>Пишете съобщения със своя Neko адрес за да докажете,че е ваш.</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Neko addresses</source>
-        <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените Емеркойн адреси.</translation>
+        <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените Neko адреси.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -380,11 +380,11 @@
     </message>
     <message>
         <source>Neko Core</source>
-        <translation>Емеркойн ядро</translation>
+        <translation>Neko ядро</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and neko: URIs)</source>
-        <translation>Изискване на плащания(генерира QR кодове и емеркойн: URIs)</translation>
+        <translation>Изискване на плащания(генерира QR кодове и Neko: URIs)</translation>
     </message>
     <message>
         <source>&amp;About Neko Core</source>
@@ -400,7 +400,7 @@
     </message>
     <message>
         <source>Open a neko: URI or payment request</source>
-        <translation>Отворете емеркойн: URI  или заявка за плащане</translation>
+        <translation>Отворете Neko: URI  или заявка за плащане</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -408,11 +408,11 @@
     </message>
     <message>
         <source>Show the Neko Core help message to get a list with possible Neko command-line options</source>
-        <translation>Покажи помощните съобщения на Емеркойн за да видиш наличните и валидни команди</translation>
+        <translation>Покажи помощните съобщения на Neko за да видиш наличните и валидни команди</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Neko network</source>
-        <translation><numerusform>%n връзка към Емеркоин мрежата</numerusform><numerusform>%n връзки към Емеркоин мрежата</numerusform></translation>
+        <translation><numerusform>%n връзка към Neko мрежата</numerusform><numerusform>%n връзки към Neko мрежата</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -749,7 +749,7 @@ Address: %4
     </message>
     <message>
         <source>The entered address "%1" is not a valid Neko address.</source>
-        <translation>"%1" не е валиден Емеркоин адрес.</translation>
+        <translation>"%1" не е валиден Neko адрес.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -787,7 +787,7 @@ Address: %4
     <name>HelpMessageDialog</name>
     <message>
         <source>Neko Core</source>
-        <translation>Емеркойн ядро</translation>
+        <translation>Neko ядро</translation>
     </message>
     <message>
         <source>version</source>
@@ -838,11 +838,11 @@ Address: %4
     </message>
     <message>
         <source>Welcome to Neko Core.</source>
-        <translation>Добре дошли в Емеркойн ядрото.</translation>
+        <translation>Добре дошли в Neko ядрото.</translation>
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where Neko Core will store its data.</source>
-        <translation>Тъй като това е първото стартиране на програмата можете да изберете къде Емеркон ядрото да запази данните си.</translation>
+        <translation>Тъй като това е първото стартиране на програмата можете да изберете къде Neko ядрото да запази данните си.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -854,7 +854,7 @@ Address: %4
     </message>
     <message>
         <source>Neko Core</source>
-        <translation>Емеркойн ядро</translation>
+        <translation>Neko ядро</translation>
     </message>
     <message>
         <source>Error</source>
@@ -880,11 +880,11 @@ Address: %4
     </message>
     <message>
         <source>Automatically start Neko after logging in to the system.</source>
-        <translation>Автоматично включване на Емеркойн след влизане в системата.</translation>
+        <translation>Автоматично включване на Neko след влизане в системата.</translation>
     </message>
     <message>
         <source>&amp;Start Neko on system login</source>
-        <translation>&amp;Пускане на Емеркоин при вход в системата</translation>
+        <translation>&amp;Пускане на Neko при вход в системата</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -944,7 +944,7 @@ Address: %4
     </message>
     <message>
         <source>Connect to the Neko network through a SOCKS5 proxy.</source>
-        <translation>Свързване с Емеркойн мрежата чрез SOCKS5  прокси.</translation>
+        <translation>Свързване с Neko мрежата чрез SOCKS5  прокси.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -992,7 +992,7 @@ Address: %4
     </message>
     <message>
         <source>The user interface language can be set here. This setting will take effect after restarting Neko.</source>
-        <translation>Промяната на езика ще влезе в сила след рестартиране на Емеркоин.</translation>
+        <translation>Промяната на езика ще влезе в сила след рестартиране на Neko.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1051,7 +1051,7 @@ Address: %4
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Neko network after a connection is established, but this process has not completed yet.</source>
-        <translation>Текущата информация на екрана може да не е актуална. Вашият портфейл ще се синхронизира автоматично с мрежата на Емеркоин, щом поне една връзката с нея се установи; този процес все още не е приключил.</translation>
+        <translation>Текущата информация на екрана може да не е актуална. Вашият портфейл ще се синхронизира автоматично с мрежата на Neko, щом поне една връзката с нея се установи; този процес все още не е приключил.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1134,7 +1134,7 @@ Address: %4
     </message>
     <message>
         <source>Cannot start neko: click-to-pay handler</source>
-        <translation>Емеркойн не можe да се стартира: click-to-pay handler</translation>
+        <translation>Neko не можe да се стартира: click-to-pay handler</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1188,7 +1188,7 @@ Address: %4
     </message>
     <message>
         <source>Enter an Neko address (e.g. %1)</source>
-        <translation>Въведете Емеркойн адрес (например: %1)</translation>
+        <translation>Въведете Neko адрес (например: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1402,7 +1402,7 @@ Address: %4
     </message>
     <message>
         <source>Open the Neko debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Отворете Емеркой дебъг лог файла от настоящата Data папка. Може да отнеме няколко секунди при по - големи лог файлове.</translation>
+        <translation>Отворете Neko дебъг лог файла от настоящата Data папка. Може да отнеме няколко секунди при по - големи лог файлове.</translation>
     </message>
     <message>
         <source>Clear console</source>
@@ -1410,7 +1410,7 @@ Address: %4
     </message>
     <message>
         <source>Welcome to the Neko RPC console.</source>
-        <translation>Добре дошли в Емеркойн RPC конзолата.</translation>
+        <translation>Добре дошли в Neko RPC конзолата.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1786,7 +1786,7 @@ Address: %4
     </message>
     <message>
         <source>Warning: Invalid Neko address</source>
-        <translation>Внимание: Невалиден Емеркойн адрес</translation>
+        <translation>Внимание: Невалиден Neko адрес</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1876,7 +1876,7 @@ Address: %4
     <name>ShutdownWindow</name>
     <message>
         <source>Neko Core is shutting down...</source>
-        <translation>Емеркойн ядрото се изключва...</translation>
+        <translation>Neko ядрото се изключва...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1943,7 +1943,7 @@ Address: %4
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Neko address</source>
-        <translation>Проверете съобщение, за да сте сигурни че е подписано с определен Емеркоин адрес</translation>
+        <translation>Проверете съобщение, за да сте сигурни че е подписано с определен Neko адрес</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2006,7 +2006,7 @@ Address: %4
     <name>SplashScreen</name>
     <message>
         <source>Neko Core</source>
-        <translation>Емеркойн ядро</translation>
+        <translation>Neko ядро</translation>
     </message>
     <message>
         <source>The Neko Core developers</source>
@@ -2540,7 +2540,7 @@ Address: %4
     </message>
     <message>
         <source>Copyright (C) 2013-%i The Emercoin Core Developers</source>
-        <translation>Всички права запазени (C) 2013-%i Доставчиците на Емеркойн</translation>
+        <translation>Всички права запазени (C) 2013-%i Доставчиците на Neko</translation>
     </message>
     <message>
         <source>Information</source>

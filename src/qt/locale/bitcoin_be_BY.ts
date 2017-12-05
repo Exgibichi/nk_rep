@@ -67,11 +67,11 @@
     </message>
     <message>
         <source>These are your Neko addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Тут знаходзяцца Емеройн-адрасы для высылання плацяжоў. Заўсёды спраўджвайце колькасць і адрас прызначэння перад здзяйсненнем транзакцыі.</translation>
+        <translation>Тут знаходзяцца Neko-адрасы для высылання плацяжоў. Заўсёды спраўджвайце колькасць і адрас прызначэння перад здзяйсненнем транзакцыі.</translation>
     </message>
     <message>
         <source>These are your Neko addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Тут знаходзяцца Емеройн-адрасы для прымання плацяжоў. Пажадана выкарыстоўваць новы адрас для кожнай транзакцыі.</translation>
+        <translation>Тут знаходзяцца Neko-адрасы для прымання плацяжоў. Пажадана выкарыстоўваць новы адрас для кожнай транзакцыі.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -308,7 +308,7 @@
     </message>
     <message>
         <source>Send coins to an Neko address</source>
-        <translation>Даслаць манеты на Емеройн-адрас</translation>
+        <translation>Даслаць манеты на Neko-адрас</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -332,7 +332,7 @@
     </message>
     <message>
         <source>Neko</source>
-        <translation>Емеройн</translation>
+        <translation>Neko</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -364,11 +364,11 @@
     </message>
     <message>
         <source>Sign messages with your Neko addresses to prove you own them</source>
-        <translation>Падпісаць паведамленне з дапамогай Емеройн-адраса каб даказаць, што яно належыць вам</translation>
+        <translation>Падпісаць паведамленне з дапамогай Neko-адраса каб даказаць, што яно належыць вам</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Neko addresses</source>
-        <translation>Спраўдзіць паведамленне з дапамогай Емеройн-адраса каб даказаць, што яно належыць вам</translation>
+        <translation>Спраўдзіць паведамленне з дапамогай Neko-адраса каб даказаць, што яно належыць вам</translation>
     </message>
     <message>
         <source>&amp;File</source>
